@@ -1,0 +1,11 @@
+name: Login Redirect to Front
+description: Redirect to front page after login
+type: module
+# core: 8.x
+
+
+# Information added by Drupal.org packaging script on 2017-10-20
+version: '8.x-1.0'
+core: '8.x'
+project: 'login_redirect_to_front'
+datestamp: 1508490848

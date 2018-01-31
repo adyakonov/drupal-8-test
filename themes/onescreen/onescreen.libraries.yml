@@ -1,0 +1,23 @@
+global-css:
+  css:
+    theme:
+      css/bootstrap.css: {}
+      css/flexslider.css: {}
+      css/styles.css: {}
+
+global-js:
+  js:
+    js/bootstrap.js : {}
+    js/script.js : {}
+  dependencies:
+    - core/jquery
+
+slider-js:
+  js:
+    js/jquery.flexslider.js : {}
+    js/slider.js : {}
+
+animation-js:
+  js:
+    js/jquery.viewportchecker.js:  {}
+    js/animation.js: {}

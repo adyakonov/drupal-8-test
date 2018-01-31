@@ -1,0 +1,25 @@
+uuid: 338a1383-7bdc-4df0-9bcd-952e38230a19
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_tm_testimonial_link
+    - node.type.mt_testimonial
+  module:
+    - link
+_core:
+  default_config_hash: UBn3yq0SLfGr6iLNRjY4aOhnD_zBHTD6bfr-6uOoM-0
+id: node.mt_testimonial.field_mt_tm_testimonial_link
+field_name: field_mt_tm_testimonial_link
+entity_type: node
+bundle: mt_testimonial
+label: 'Testimonial Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

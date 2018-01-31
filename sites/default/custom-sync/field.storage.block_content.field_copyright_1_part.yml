@@ -1,0 +1,21 @@
+uuid: 0b74470d-8024-4e2e-8067-a6aefa5ab1a9
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.field_copyright_1_part
+field_name: field_copyright_1_part
+entity_type: block_content
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,23 @@
+uuid: 3bed04f2-dd5a-493e-ad95-cf3f9e9426da
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: jCZw1bfV1czHt5bnGFU5_vqS0Du6SA9RJCrgsCuY8bs
+id: node.field_mt_tm_subtitle
+field_name: field_mt_tm_subtitle
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

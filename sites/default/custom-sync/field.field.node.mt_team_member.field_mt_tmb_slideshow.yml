@@ -1,0 +1,25 @@
+uuid: a962275c-361b-4ac5-8ff6-a8c61ea6177b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_tmb_slideshow
+    - node.type.mt_team_member
+_core:
+  default_config_hash: aJCme6QPCm0gbK-wQaI_itM3FuSUgWe8D6_kyjmoC7s
+id: node.mt_team_member.field_mt_tmb_slideshow
+field_name: field_mt_tmb_slideshow
+entity_type: node
+bundle: mt_team_member
+label: 'Promote to front page slideshow'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

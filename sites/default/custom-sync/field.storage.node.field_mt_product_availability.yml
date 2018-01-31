@@ -1,0 +1,29 @@
+uuid: e0eb5080-7ce0-4fad-8d73-1500de0da90f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+_core:
+  default_config_hash: FEV-BrK0hyGAvl3GVrND_1tdZxeEts0k3Mu5z69Q1bY
+id: node.field_mt_product_availability
+field_name: field_mt_product_availability
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: in_stock
+      label: 'In Stock'
+    -
+      value: out_of_stock
+      label: 'Out of Stock'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

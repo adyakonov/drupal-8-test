@@ -1,0 +1,7 @@
+name: Test Module
+type: module
+description: Test Module for different features.
+core: 8.x
+package: Custom
+dependencies:
+  - ctools

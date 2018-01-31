@@ -1,0 +1,8 @@
+parameters:
+  test_module.message_types: ['status', 'warning', 'error']
+services:
+  test_module.random_message:
+    class: Drupal\test_module\RandomMessageGenerator
+  test_module.random_drupal_message:
+      class: Drupal\test_module\RandomDrupalMessage
+      arguments: ['@test_module.random_message', '%test_module.message_types%']

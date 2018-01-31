@@ -1,0 +1,11 @@
+name: SuperDrupal Module
+description: A skeleton Drupal8 module.
+package: Custom
+
+type: module
+core: 8.x
+
+dependencies:
+  - datetime:datetime
+  - options:options
+  - field_ui:field_ui

@@ -1,0 +1,22 @@
+uuid: b4892542-e3b0-4335-bd94-a0eb7f0b6c47
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_color
+    - paragraphs.paragraphs_type.homepage_slider
+  module:
+    - color_field
+id: paragraph.homepage_slider.field_text_color
+field_name: field_text_color
+entity_type: paragraph
+bundle: homepage_slider
+label: 'Text color'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  opacity: 1
+field_type: color_field_type

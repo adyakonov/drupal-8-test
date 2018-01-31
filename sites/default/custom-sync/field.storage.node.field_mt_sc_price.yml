@@ -1,0 +1,23 @@
+uuid: 2f18eacf-c1f5-4f20-a9cf-f28eea590141
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: DB9hQQ-HGnXHm7KjI_KGT3Uv-_so_CR3EvmuBhHVZZc
+id: node.field_mt_sc_price
+field_name: field_mt_sc_price
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,14 @@
+{#
+/**
+ * @file
+ * Superdrupal module SuperDrupalInject template.
+ */
+ #}
+
+{% for item in data %}
+  {% if item == data['description'] %}
+    <div class="superdrupalinject-description">
+      {{ '@description'|t({ '@description': item }) }}
+    </div>
+  {% endif %}
+{% endfor %}

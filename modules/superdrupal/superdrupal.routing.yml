@@ -1,0 +1,39 @@
+superdrupal.content:
+  path: '/superdrupal/hello'
+  defaults:
+    _controller: '\Drupal\superdrupal\Controller\SuperDrupalController::content'
+    _title: 'Hello Ford Escort'
+  requirements:
+    _permission: 'access content'
+
+superdrupal.profile:
+  path: '/superdrupal/profile'
+  defaults:
+    _controller: '\Drupal\superdrupal\Controller\ProfileController::content'
+    _title: 'User profile'
+  requirements:
+    _user_is_logged_in: 'TRUE'
+
+superdrupal.profile.edit:
+  path: '/superdrupal/profile/edit'
+  defaults:
+    _entity_form: super_profile.default
+    _title: 'Edit profile'
+  requirements:
+    _user_is_logged_in: 'TRUE'
+
+super_profile.settings:
+  path: 'admin/structure/super_profile/settings'
+  defaults:
+    _form: '\Drupal\superdrupal\Form\SuperProfileSettingsForm'
+    _title: 'Super Profile Settings'
+  requirements:
+    _permission: 'administer'
+
+superdrupalinject.settings:
+  path: 'admin/config/superdrupalinject'
+  defaults:
+    _form: '\Drupal\superdrupal\Form\SuperDrupalInjectSettingsForm'
+    _title: 'SuperDrupalInject Settings'
+  requirements:
+    _permission: 'administer site configuration'

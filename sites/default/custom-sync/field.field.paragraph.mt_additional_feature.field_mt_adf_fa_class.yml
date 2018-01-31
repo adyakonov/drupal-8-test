@@ -1,0 +1,21 @@
+uuid: 3129a291-8aa8-4b95-ad20-be9b4dd660f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mt_adf_fa_class
+    - paragraphs.paragraphs_type.mt_additional_feature
+_core:
+  default_config_hash: FpAJdrKe2U7gjgXAwWmNfulBlsTcrBt7zz3PJdD4hYA
+id: paragraph.mt_additional_feature.field_mt_adf_fa_class
+field_name: field_mt_adf_fa_class
+entity_type: paragraph
+bundle: mt_additional_feature
+label: 'Font Awesome class'
+description: 'Enter the class of the icon you want from the Font Awesome library e.g.: fa-film. A list of the available classes is provided here: <a href="http://fortawesome.github.io/Font-Awesome/cheatsheet" target="_blank">http://fortawesome.github.io/Font-Awesome/cheatsheet</a>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

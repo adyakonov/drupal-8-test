@@ -1,0 +1,67 @@
+entity_change_notifier.ecn_destination.*:
+  type: config_entity
+  label: 'Destination config'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Destination name'
+    message_expiry:
+      type: integer
+      label: 'Message expiration time'
+    uuid:
+      type: string
+    message_destination:
+      type: string
+      label: 'Message destination'
+    message_destination_settings:
+      type: entity_change_notifier.destination.message_destination.[%parent.message_destination]
+
+entity_change_notifier.destination.message_destination.*:
+  type: mapping
+  label: 'Message destination settings'
+
+entity_change_notifier.destination.message_destination.drupal_logger:
+  type: mapping
+  label: 'Logger message destination'
+  mapping:
+    channel:
+      type: string
+      label: 'Channel'
+    level:
+      type: integer
+      label: 'Level'
+
+entity_change_notifier.destination.message_destination.drupal_queue:
+  type: mapping
+  label: 'Queue message destination'
+  mapping:
+    queue_name:
+      type: string
+      label: 'Queue name'
+
+entity_change_notifier.ecn_publisher.*:
+  type: config_entity
+  label: 'Publisher config'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Publisher name'
+    uuid:
+      type: string
+    destination:
+      type: string
+      label: 'Destination configuration entity'
+    publish_types:
+      label: 'Entity type'
+      type: sequence
+      sequence:
+        type: sequence
+        sequence:
+          label: 'Bundle'
+          type: string

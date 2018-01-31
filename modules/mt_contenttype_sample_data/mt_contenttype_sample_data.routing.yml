@@ -1,0 +1,7 @@
+mt_contenttype_sample_data.admin_index:
+  path: 'admin/config/mt_contenttype_sample_data'
+  defaults:
+    _form: '\Drupal\mt_contenttype_sample_data\Form\MTContentTypeSampleDataSettingsForm'
+    _title: 'MT Content Type Sample Data Import/Export Settings'
+  requirements:
+    _permission: 'administer site configuration'

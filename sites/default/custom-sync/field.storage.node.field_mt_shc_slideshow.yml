@@ -1,0 +1,20 @@
+uuid: d7d4c526-1ba6-41c4-9527-623cdf0883d4
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: Zw6FlmA0nTy11_l4MA2yCEdrKp4eArcjjunNUrkdUcM
+id: node.field_mt_shc_slideshow
+field_name: field_mt_shc_slideshow
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

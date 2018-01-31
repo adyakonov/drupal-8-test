@@ -1,0 +1,25 @@
+uuid: 1afc3c9e-83c4-4308-9ec6-9a3c3f911952
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_simple_price
+    - node.type.mt_simple_product
+_core:
+  default_config_hash: y5Gd2PEx-IN5H_BO1pHoNv-M5EU-2Q5qRMqTaoRgMPQ
+id: node.mt_simple_product.field_simple_price
+field_name: field_simple_price
+entity_type: node
+bundle: mt_simple_product
+label: Price
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

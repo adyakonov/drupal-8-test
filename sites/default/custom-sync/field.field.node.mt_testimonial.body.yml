@@ -1,0 +1,24 @@
+uuid: 153473a0-4a59-4683-90c0-086c0a10912d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.mt_testimonial
+  module:
+    - text
+_core:
+  default_config_hash: JEP4f2tPkFn4ym0_e2KrC0Xl42kVyskmKxPICD2D4B0
+id: node.mt_testimonial.body
+field_name: body
+entity_type: node
+bundle: mt_testimonial
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

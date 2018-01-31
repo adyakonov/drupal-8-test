@@ -1,0 +1,11 @@
+uuid: 7924c1c7-2763-47bd-b02f-29b7fe1fb4c0
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: FWCPTC0y5M6TCJ3WKW1gdz_Rl3YkZ97N1w1xn4xSZh0
+name: 'Showcase Tags'
+vid: mt_showcase_tags
+description: ''
+hierarchy: 0
+weight: 0

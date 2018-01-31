@@ -1,0 +1,25 @@
+uuid: eaea1f5d-a122-4235-a5ea-d762191a390f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_tm_slideshow
+    - node.type.mt_testimonial
+_core:
+  default_config_hash: 4zuK-i7uDW6oG3uaDSUXiQxU4pus5s6pY7c8cJ1kIrw
+id: node.mt_testimonial.field_mt_tm_slideshow
+field_name: field_mt_tm_slideshow
+entity_type: node
+bundle: mt_testimonial
+label: 'Promote to front page slideshow'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

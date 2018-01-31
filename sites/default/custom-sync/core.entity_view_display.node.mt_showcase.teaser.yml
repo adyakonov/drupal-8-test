@@ -1,0 +1,66 @@
+uuid: e62cd508-fbbb-4d3b-a1c0-2b350e0e586b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.mt_showcase.body
+    - field.field.node.mt_showcase.comment
+    - field.field.node.mt_showcase.field_image
+    - field.field.node.mt_showcase.field_mt_shc_banner_image
+    - field.field.node.mt_showcase.field_mt_shc_clients_tags
+    - field.field.node.mt_showcase.field_mt_shc_content_collapses
+    - field.field.node.mt_showcase.field_mt_shc_showcase_tags
+    - field.field.node.mt_showcase.field_mt_shc_slideshow
+    - field.field.node.mt_showcase.field_mt_shc_slideshow_image
+    - field.field.node.mt_showcase.field_mt_shc_slideshow_text
+    - field.field.node.mt_showcase.field_mt_shc_subheader_body
+    - field.field.node.mt_showcase.field_mt_shc_subtitle
+    - field.field.node.mt_showcase.field_mt_shc_video
+    - image.style.large
+    - node.type.mt_showcase
+  module:
+    - image
+    - text
+    - user
+_core:
+  default_config_hash: oLGKmBj_AF7VKcVGnzmMw8XovnfI3O4XvcsRK6MVhfw
+id: node.mt_showcase.teaser
+targetEntityType: node
+bundle: mt_showcase
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 1
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_image:
+    type: image
+    weight: 0
+    label: hidden
+    settings:
+      image_style: large
+      image_link: content
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  comment: true
+  field_mt_shc_banner_image: true
+  field_mt_shc_clients_tags: true
+  field_mt_shc_content_collapses: true
+  field_mt_shc_showcase_tags: true
+  field_mt_shc_slideshow: true
+  field_mt_shc_slideshow_image: true
+  field_mt_shc_slideshow_text: true
+  field_mt_shc_subheader_body: true
+  field_mt_shc_subtitle: true
+  field_mt_shc_video: true

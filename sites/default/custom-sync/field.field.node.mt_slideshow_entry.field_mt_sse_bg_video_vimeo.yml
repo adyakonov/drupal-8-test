@@ -1,0 +1,21 @@
+uuid: 7b7d1d5a-751f-446b-a9c7-6cbed4f6958a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_sse_bg_video_vimeo
+    - node.type.mt_slideshow_entry
+_core:
+  default_config_hash: sJysDOFMvmb6MKbHnYQZoL20XDa1yrB2mv3FVPddk2U
+id: node.mt_slideshow_entry.field_mt_sse_bg_video_vimeo
+field_name: field_mt_sse_bg_video_vimeo
+entity_type: node
+bundle: mt_slideshow_entry
+label: 'Background Video - Vimeo ID'
+description: 'Provide the ID of the Video you''d like to use from Vimeo (e.g 82642494). This field will override the Youtube field if both are populated.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

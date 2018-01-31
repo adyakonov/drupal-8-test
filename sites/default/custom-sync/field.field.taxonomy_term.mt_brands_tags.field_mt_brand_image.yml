@@ -1,0 +1,40 @@
+uuid: 89e5ea31-f6ae-4621-b3ff-7b91f364737a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_mt_brand_image
+    - taxonomy.vocabulary.mt_brands_tags
+  module:
+    - image
+_core:
+  default_config_hash: xOvaBuWBX1mNLdH8jpOVFOBT0YeZumRdpdXIH8GsFak
+id: taxonomy_term.mt_brands_tags.field_mt_brand_image
+field_name: field_mt_brand_image
+entity_type: taxonomy_term
+bundle: mt_brands_tags
+label: 'Client Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: 750x750
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: true
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

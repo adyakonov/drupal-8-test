@@ -1,0 +1,21 @@
+uuid: 1eed1533-17cf-4d62-815f-b077642e8491
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_teaser_full_height_list
+    - paragraphs.paragraphs_type.homepage_slider
+  module:
+    - text
+id: paragraph.homepage_slider.field_teaser_full_height_list
+field_name: field_teaser_full_height_list
+entity_type: paragraph
+bundle: homepage_slider
+label: 'Teaser full height list'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

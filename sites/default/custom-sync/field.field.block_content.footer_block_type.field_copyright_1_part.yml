@@ -1,0 +1,19 @@
+uuid: 02123df3-c758-42f1-ba51-1d80c528a80f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_block_type
+    - field.storage.block_content.field_copyright_1_part
+id: block_content.footer_block_type.field_copyright_1_part
+field_name: field_copyright_1_part
+entity_type: block_content
+bundle: footer_block_type
+label: 'Copyright 1 part'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

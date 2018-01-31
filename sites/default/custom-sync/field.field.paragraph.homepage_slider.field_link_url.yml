@@ -1,0 +1,23 @@
+uuid: 8045d3ca-b66d-4a58-9b41-aabdcc8066be
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link_url
+    - paragraphs.paragraphs_type.homepage_slider
+  module:
+    - link
+id: paragraph.homepage_slider.field_link_url
+field_name: field_link_url
+entity_type: paragraph
+bundle: homepage_slider
+label: 'Link URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mt_sc_highlight_title
+    - paragraphs.paragraphs_type.mt_sc_highlight
+id: paragraph.mt_sc_highlight.field_mt_sc_highlight_title
+field_name: field_mt_sc_highlight_title
+entity_type: paragraph
+bundle: mt_sc_highlight
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

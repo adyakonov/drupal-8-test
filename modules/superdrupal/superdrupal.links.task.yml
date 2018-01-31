@@ -1,0 +1,5 @@
+# Super profile routing definition
+super_profile.settings_tab:
+  route_name: super_profile.settings
+  title: 'Settings'
+  base_route: super_profile.settings

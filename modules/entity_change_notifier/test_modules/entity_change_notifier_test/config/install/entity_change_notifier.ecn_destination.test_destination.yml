@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+id: test_destination
+label: 'Test logger destination'
+message_destination: drupal_logger
+message_expiry: 86400
+message_destination_settings:
+  channel: entity_change_notifier
+  level: 7

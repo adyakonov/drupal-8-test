@@ -1,0 +1,24 @@
+uuid: ce1ec785-3593-4e33-8be0-b088a1eaf247
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_sc_subheader_body
+    - node.type.mt_service
+  module:
+    - text
+_core:
+  default_config_hash: _Hj6J7112UQeD4h8TQaDsyJx7i9c8WFzvAyS1URkvXY
+id: node.mt_service.field_mt_sc_subheader_body
+field_name: field_mt_sc_subheader_body
+entity_type: node
+bundle: mt_service
+label: 'Subheader body'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

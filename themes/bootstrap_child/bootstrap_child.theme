@@ -1,0 +1,20 @@
+<?php
+/**
+ * @file
+ * Bootstrap sub-theme.
+ *
+ * Place your custom PHP code in this file.
+ */
+
+/**
+ * Implements template_preprocess_page().
+ */
+function bootstrap_child_preprocess_page(&$variables) {
+  // Let's assume your tpl file is page--home.tpl.php.
+  $variables['theme_hook_suggestions'][] = 'page__home';
+
+}
+
+/**
+* Implements hook_page_attachments_alter().
+ */

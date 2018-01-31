@@ -1,0 +1,24 @@
+uuid: 6544fbf9-19ad-4731-a9a7-88dad63f13ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.mt_simple_product
+  module:
+    - text
+_core:
+  default_config_hash: ekJljzuoAoHDv1BQqC1PhROiHq-hGljTRdsd7qisDcw
+id: node.mt_simple_product.body
+field_name: body
+entity_type: node
+bundle: mt_simple_product
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

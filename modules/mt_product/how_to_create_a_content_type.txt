@@ -1,0 +1,40 @@
+# How to create a content type instruction.
+
+1. Create a content type with the required fields in the site admin area. (structure->Content types->Add content type)
+2. Go to the Configuration->Development->Synchronize->Export->Single item
+3. Choose a configuration type "Etity form dispaly"
+3.1. Choose a configuration name "node.your_contentype_name.default".
+    In the bottom you will see the required file name. Copy it and create the file with this name.
+    Copy the code from the field "Here is your configuration" and paste to created file.
+    Remove first row "uuid: ........"
+    Remove section "_core:
+                      default_config_hash: .........."
+4. Choose a configuration type "Etity view dispaly"
+4.1. Choose a configuration name "node.your_contentype_name.teaser".
+    In the bottom you will see the required file name. Copy it and create the file with this name.
+    Copy the code from the field "Here is your configuration" and paste to created file.
+    Remove first row "uuid: ........"
+    Remove section "_core:
+                      default_config_hash: .........."
+4.2. Choose a configuration name "node.your_contentype_name.default".
+    In the bottom you will see the required file name. Copy it and create the file with this name.
+    Copy the code from the field "Here is your configuration" and paste to created file.
+    Remove first row "uuid: ........"
+    Remove section "_core:
+                      default_config_hash: .........."
+5. Choose a configuration type "Field"
+5.1. Choose a configuration name "node.your_contentype_name.your_field_name".
+    In the bottom you will see the required file name. Copy it and create the file with this name.
+    Copy the code from the field "Here is your configuration" and paste to created file.
+    Remove first row "uuid: ........"
+    Remove section "_core:
+                      default_config_hash: .........."
+5.2. Repeat this action for each field that you have.
+6. Choose a configuration type "Field Storage"
+6.1. Choose a configuration name "node.your_field_name".
+    In the bottom you will see the required file name. Copy it and create the file with this name.
+    Copy the code from the field "Here is your configuration" and paste to created file.
+    Remove first row "uuid: ........"
+    Remove section "_core:
+                      default_config_hash: .........."
+6.2. Repeat this action for each field that you have.

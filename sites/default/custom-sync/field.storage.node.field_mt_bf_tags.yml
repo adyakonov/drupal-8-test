@@ -1,0 +1,22 @@
+uuid: 73668d09-108b-415f-8d78-04a8629b944e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+_core:
+  default_config_hash: G1NnC3Je4lbvlqWLkAWsdRQG7ISBdA6fYLHcuwfjGw0
+id: node.field_mt_bf_tags
+field_name: field_mt_bf_tags
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

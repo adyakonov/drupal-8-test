@@ -1,0 +1,28 @@
+uuid: d0c5a889-2839-461b-95c6-44901b3ff214
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.mt_collapse.field_mt_collapse_body
+    - field.field.paragraph.mt_collapse.field_mt_collapse_title
+    - paragraphs.paragraphs_type.mt_collapse
+  module:
+    - text
+_core:
+  default_config_hash: 2d3L3y6H9RiMm1rU2edZYOD-m7gTOwlgZj0GbUsfKU8
+id: paragraph.mt_collapse.default
+targetEntityType: paragraph
+bundle: mt_collapse
+mode: default
+content:
+  field_mt_collapse_body:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  created: true
+  field_mt_collapse_title: true
+  uid: true

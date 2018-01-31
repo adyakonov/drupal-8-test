@@ -1,0 +1,21 @@
+uuid: f9a4b636-b810-4d64-a860-a4a0f66d2829
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_bf_font_awesome_classes
+    - node.type.mt_benefit
+_core:
+  default_config_hash: dYNag187z8cGaFCyf7faMPrtRRsakav-H22Dsy1yBgk
+id: node.mt_benefit.field_mt_bf_font_awesome_classes
+field_name: field_mt_bf_font_awesome_classes
+entity_type: node
+bundle: mt_benefit
+label: 'Font Awesome classes'
+description: 'Enter the class of the icon you want from the Font Awesome library e.g.: fa-film. A list of the available classes is provided here: <a href="http://fortawesome.github.io/Font-Awesome/cheatsheet" target="_blank">http://fortawesome.github.io/Font-Awesome/cheatsheet</a>. If you leave this field blank, the corresponding node image will be rendered instead of the icon.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

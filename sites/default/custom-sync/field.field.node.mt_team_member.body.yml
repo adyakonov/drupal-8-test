@@ -1,0 +1,24 @@
+uuid: d9a10fa6-d34b-4a6b-a87d-7ed763e9197c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.mt_team_member
+  module:
+    - text
+_core:
+  default_config_hash: oJ0tgGGHx-83mq4HhmnU2re3697-BLnmNqlEXUO7N_Y
+id: node.mt_team_member.body
+field_name: body
+entity_type: node
+bundle: mt_team_member
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

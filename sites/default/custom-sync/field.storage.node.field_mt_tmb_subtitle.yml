@@ -1,0 +1,23 @@
+uuid: c6683b78-2430-41a8-937e-8d75abcccaee
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: X_31622TKSM7Qe6cn5zgxk6smiWttEk0KJKVvnT0i9M
+id: node.field_mt_tmb_subtitle
+field_name: field_mt_tmb_subtitle
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

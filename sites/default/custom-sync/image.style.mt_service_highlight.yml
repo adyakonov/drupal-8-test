@@ -1,0 +1,16 @@
+uuid: ce32dbeb-1583-450a-907f-5e8790e27af2
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Qztor_kFrV0_WaR3NVZfew-yQ3x5F0mVy3ygd3-Dzr8
+name: mt_service_highlight
+label: 'Service Highlight (850x640)'
+effects:
+  5de21a5b-f021-4dd1-933e-78d1db69fb01:
+    uuid: 5de21a5b-f021-4dd1-933e-78d1db69fb01
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 850
+      height: 640

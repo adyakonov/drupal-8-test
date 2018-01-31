@@ -1,0 +1,46 @@
+uuid: ff7a591b-e536-4cb5-8ae9-2e6ecdd1356c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.mt_testimonial.body
+    - field.field.node.mt_testimonial.field_mt_tm_banner_image
+    - field.field.node.mt_testimonial.field_mt_tm_slideshow
+    - field.field.node.mt_testimonial.field_mt_tm_slideshow_image
+    - field.field.node.mt_testimonial.field_mt_tm_slideshow_text
+    - field.field.node.mt_testimonial.field_mt_tm_subtitle
+    - field.field.node.mt_testimonial.field_mt_tm_testimonial_image
+    - field.field.node.mt_testimonial.field_mt_tm_testimonial_link
+    - node.type.mt_testimonial
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: XqUme-j436g5-slD-Q3ef1wRZKyG3e-GM6JA7KT6Shk
+id: node.mt_testimonial.teaser
+targetEntityType: node
+bundle: mt_testimonial
+mode: teaser
+content:
+  body:
+    label: visually_hidden
+    type: text_summary_or_trimmed
+    weight: 0
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_mt_tm_banner_image: true
+  field_mt_tm_slideshow: true
+  field_mt_tm_slideshow_image: true
+  field_mt_tm_slideshow_text: true
+  field_mt_tm_subtitle: true
+  field_mt_tm_testimonial_image: true
+  field_mt_tm_testimonial_link: true

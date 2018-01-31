@@ -1,0 +1,20 @@
+uuid: 0a567267-3430-47c3-9d12-5d284801a860
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: H13qLWeRWHIeiA0W2wGF8RGUnBdsiQru4pKWXa-QFjg
+id: node.field_price
+field_name: field_price
+entity_type: node
+type: float
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,25 @@
+superdrupal.admin:
+  title: 'SuperDrupal module settings'
+  description: 'example of how to make an admin settings page link'
+  parent: system.admin_config_development
+  route_name: superdrupal.content
+  weight: 100
+
+super_profile.admin.structure.settings:
+  title: Super profile settings
+  description: 'Configure Super profile'
+  route_name: super_profile.settings
+  parent: system.admin_structure
+
+superdrupalinject.admin:
+  title: 'SuperDrupalInject settings'
+  description: 'Inject CSS and JS'
+  parent: system.admin_config_development
+  route_name: superdrupalinject.settings
+  weight: 100
+
+superdrupalinject.admin.config.settings:
+  title: SuperDrupalInject settings
+  description: 'Inject CSS and JS'
+  route_name: superdrupalinject.settings
+  parent: system.admin_config

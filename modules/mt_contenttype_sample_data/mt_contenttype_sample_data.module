@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * @file
+ * Contains mt_contenttype_sample_data.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function mt_contenttype_sample_data_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the mt_contenttype_sample_data module.
+    case 'help.page.mt_contenttype_sample_data':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('MT Content Type Sample Data.') . '</p>';
+
+      return $output;
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function mt_contenttype_sample_data_theme() {
+  // Theme for mt_contenttype_sample_data module.
+  $themes['mt_contenttype_sample_data'] = [
+    'template'  => 'mt_contenttype_sample_data',
+    'variables' => [
+      'data' => NULL,
+    ],
+  ];
+
+  return $themes;
+
+}

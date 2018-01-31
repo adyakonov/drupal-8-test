@@ -1,0 +1,25 @@
+uuid: d6eed445-8754-4c90-a632-11649bf78714
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_buy_link
+    - node.type.mt_product
+  module:
+    - link
+_core:
+  default_config_hash: z0Ylggc_k_Kpc6zqhklbD2oCWkYC80S4epJHkESytko
+id: node.mt_product.field_mt_buy_link
+field_name: field_mt_buy_link
+entity_type: node
+bundle: mt_product
+label: 'Buy Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

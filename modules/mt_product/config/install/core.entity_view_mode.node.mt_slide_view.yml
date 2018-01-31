@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.mt_slide_view
+label: 'Slide View'
+targetEntityType: node
+cache: true

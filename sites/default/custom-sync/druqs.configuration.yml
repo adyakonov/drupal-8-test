@@ -1,0 +1,7 @@
+search_sources:
+  node: node
+  user: user
+results_per_source: 5
+results_max: 20
+_core:
+  default_config_hash: 8TC-9toAHCjjy5mhvrSX9yCXm3CnpZWWY8BPLqDIl64

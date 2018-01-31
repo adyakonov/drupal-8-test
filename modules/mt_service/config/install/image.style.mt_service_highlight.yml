@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies: {  }
+name: mt_service_highlight
+label: 'Service Highlight (850x640)'
+effects:
+  5de21a5b-f021-4dd1-933e-78d1db69fb01:
+    uuid: 5de21a5b-f021-4dd1-933e-78d1db69fb01
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 850
+      height: 640

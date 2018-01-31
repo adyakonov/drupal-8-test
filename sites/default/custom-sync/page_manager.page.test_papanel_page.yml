@@ -1,0 +1,12 @@
+uuid: 80ed1afe-d2fc-4484-85b1-11c9f6d7fcdd
+langcode: en
+status: true
+dependencies: {  }
+id: test_papanel_page
+label: 'Test PaPanel Page'
+description: ''
+use_admin_theme: false
+path: /panel-page
+access_logic: and
+access_conditions: {  }
+parameters: {  }

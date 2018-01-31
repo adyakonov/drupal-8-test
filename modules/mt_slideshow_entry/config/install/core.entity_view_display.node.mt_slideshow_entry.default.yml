@@ -1,0 +1,49 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.mt_slideshow_entry.field_mt_sse_bg_video_vimeo
+    - field.field.node.mt_slideshow_entry.field_mt_sse_bg_video_volume
+    - field.field.node.mt_slideshow_entry.field_mt_sse_bg_video_youtube
+    - field.field.node.mt_slideshow_entry.field_mt_sse_slideshow
+    - field.field.node.mt_slideshow_entry.field_mt_sse_slideshow_image
+    - field.field.node.mt_slideshow_entry.field_mt_sse_slideshow_path
+    - field.field.node.mt_slideshow_entry.field_mt_sse_slideshow_text
+    - image.style.large
+    - node.type.mt_slideshow_entry
+  module:
+    - image
+    - text
+    - user
+id: node.mt_slideshow_entry.default
+targetEntityType: node
+bundle: mt_slideshow_entry
+mode: default
+content:
+  field_mt_sse_slideshow_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: large
+      image_link: file
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_mt_sse_slideshow_text:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_mt_sse_bg_video_vimeo: true
+  field_mt_sse_bg_video_volume: true
+  field_mt_sse_bg_video_youtube: true
+  field_mt_sse_slideshow: true
+  field_mt_sse_slideshow_path: true

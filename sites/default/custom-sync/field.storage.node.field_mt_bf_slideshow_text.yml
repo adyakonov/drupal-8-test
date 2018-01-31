@@ -1,0 +1,21 @@
+uuid: 003a8b11-f0e1-4b7c-b07a-2468bd6dd067
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+_core:
+  default_config_hash: 60yD7kPIgDqFdkcF4OmiKS1ZQQdiPOEVWbX99PWpsIA
+id: node.field_mt_bf_slideshow_text
+field_name: field_mt_bf_slideshow_text
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

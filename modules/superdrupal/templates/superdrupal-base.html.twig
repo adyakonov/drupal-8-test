@@ -1,0 +1,16 @@
+{#
+/**
+ * @file
+ * Superdrupal module base template.
+ */
+ #}
+
+{% if data is iterable and data is not empty %}
+    <ul>
+    {% for item in data %}
+        <li>{{ item }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    {{ data }}
+{% endif %}

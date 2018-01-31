@@ -1,0 +1,21 @@
+uuid: 08ddb0c7-7588-4cbb-a5e4-0131b4385d7e
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+_core:
+  default_config_hash: SMnH0mck5EwvB9Sl4VkBXDP8i7VejzkFy5IZamcRSHQ
+id: paragraph.field_mt_adf_body
+field_name: field_mt_adf_body
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

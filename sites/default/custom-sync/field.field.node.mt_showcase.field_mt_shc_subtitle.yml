@@ -1,0 +1,21 @@
+uuid: 170b69a9-be3c-4a3f-97f4-413d39759346
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_shc_subtitle
+    - node.type.mt_showcase
+_core:
+  default_config_hash: IHw4zypHjbVSRMBhpbReS8ZJaxsreXSNsjrEv_3hIyc
+id: node.mt_showcase.field_mt_shc_subtitle
+field_name: field_mt_shc_subtitle
+entity_type: node
+bundle: mt_showcase
+label: Subtitle
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

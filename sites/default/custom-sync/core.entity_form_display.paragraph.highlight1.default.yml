@@ -1,0 +1,36 @@
+uuid: 9e6e1a1e-b2c3-4dd0-8ecd-647eab543816
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.highlight1.field_hl_body
+    - field.field.paragraph.highlight1.field_hl_link
+    - paragraphs.paragraphs_type.highlight1
+  module:
+    - text
+id: paragraph.highlight1.default
+targetEntityType: paragraph
+bundle: highlight1
+mode: default
+content:
+  field_hl_body:
+    weight: 0
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+  field_hl_link:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

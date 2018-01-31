@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mt_adf_body
+    - paragraphs.paragraphs_type.mt_additional_feature
+  module:
+    - text
+id: paragraph.mt_additional_feature.field_mt_adf_body
+field_name: field_mt_adf_body
+entity_type: paragraph
+bundle: mt_additional_feature
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

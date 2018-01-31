@@ -1,0 +1,65 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_prg_additional_features
+    - node.type.mt_product
+    - paragraphs.paragraphs_type.mt_additional_feature
+  module:
+    - entity_reference_revisions
+id: node.mt_product.field_mt_prg_additional_features
+field_name: field_mt_prg_additional_features
+entity_type: node
+bundle: mt_product
+label: 'Additional Features'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      mt_additional_feature: mt_additional_feature
+    target_bundles_drag_drop:
+      mt_additional_feature:
+        enabled: true
+        weight: 14
+      mt_collapse:
+        weight: 15
+        enabled: false
+      mt_dropdown:
+        weight: 16
+        enabled: false
+      mt_fancy_linked_image:
+        weight: 17
+        enabled: false
+      mt_fancy_tab:
+        weight: 18
+        enabled: false
+      mt_featured_linked_text_tile:
+        weight: 19
+        enabled: false
+      mt_highlight:
+        weight: 20
+        enabled: false
+      mt_icon_features:
+        weight: 21
+        enabled: false
+      mt_main_slideshow_slide:
+        weight: 22
+        enabled: false
+      mt_map_location:
+        weight: 23
+        enabled: false
+      mt_media_tab:
+        weight: 24
+        enabled: false
+      mt_tab:
+        weight: 25
+        enabled: false
+      mt_video_gallery_slide:
+        weight: 26
+        enabled: false
+field_type: entity_reference_revisions

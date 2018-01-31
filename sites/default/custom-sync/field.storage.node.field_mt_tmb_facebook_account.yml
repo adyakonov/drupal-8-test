@@ -1,0 +1,23 @@
+uuid: 63e27875-2421-4b6f-977b-be6ce170bad4
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: YBv2Yol2d0a3TOzpEO2SjKdc6LXEQ8RzyzqjIgWfzzQ
+id: node.field_mt_tmb_facebook_account
+field_name: field_mt_tmb_facebook_account
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

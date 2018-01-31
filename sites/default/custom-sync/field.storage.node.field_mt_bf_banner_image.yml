@@ -1,0 +1,32 @@
+uuid: 5937164c-6d4e-4835-826e-be9c519655d3
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - node
+_core:
+  default_config_hash: Hh7SqJ-uU2BTLDtrXylJymiS8JzsPY459jehIEv6b8g
+id: node.field_mt_bf_banner_image
+field_name: field_mt_bf_banner_image
+entity_type: node
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

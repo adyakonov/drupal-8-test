@@ -1,0 +1,21 @@
+uuid: 52f837b4-89b4-4cd9-9267-3de019fec632
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - video_embed_field
+_core:
+  default_config_hash: h5Xn3l3OS2nb4K0EnGcYrPBQTyczNciIquupAL_vJoA
+id: node.field_mt_video
+field_name: field_mt_video
+entity_type: node
+type: video_embed_field
+settings: {  }
+module: video_embed_field
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

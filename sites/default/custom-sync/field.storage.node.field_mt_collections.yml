@@ -1,0 +1,22 @@
+uuid: 0dfc8d28-997d-450e-9ae0-ffb7a7f8f1b1
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+_core:
+  default_config_hash: LJBDowTs0xUh_kNwuw_BM_5GNkkkcLHmVXg-6SM5RaQ
+id: node.field_mt_collections
+field_name: field_mt_collections
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

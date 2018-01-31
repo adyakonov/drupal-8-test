@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_most_popular
+    - node.type.mt_product
+id: node.mt_product.field_mt_most_popular
+field_name: field_mt_most_popular
+entity_type: node
+bundle: mt_product
+label: 'Most Popular'
+description: 'Check the box to highlight this Product as “most popular” in the pricing table.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'most popular'
+  off_label: 'Off'
+field_type: boolean

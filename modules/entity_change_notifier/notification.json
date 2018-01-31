@@ -1,0 +1,35 @@
+{
+  "title": "Notification",
+  "type": "object",
+  "properties": {
+    "action": {
+      "description": "The action that triggered the notification",
+      "type": "string",
+      "enum": ["insert", "update", "delete"]
+    },
+    "uri": {
+      "description": "The URI of a machine-readable version of the entity",
+      "type": "string",
+      "format": "uri"
+    },
+    "entity_id": {
+      "description": "The numeric ID of the entity",
+      "type": "integer",
+      "minimum": 1
+    },
+    "entity_uuid": {
+      "description": "The UUID of the entity",
+      "type": "string",
+      "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
+    },
+    "entity_type": {
+      "description": "The type of the entity, such as 'node'",
+      "type": "string"
+    },
+    "bundle": {
+      "description": "The bundle of the entity, such as 'article'",
+      "type": "string"
+    }
+  },
+  "required": ["action", "uri", "entity_id", "entity_uuid", "entity_type", "bundle"]
+}

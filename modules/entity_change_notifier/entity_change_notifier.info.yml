@@ -1,0 +1,13 @@
+name: Entity Change Notifier
+type: module
+description: Notify about entity updates
+# core: 8.x
+dependencies:
+  - jsonapi:jsonapi
+configure: entity_change_notifier.settings
+
+# Information added by Drupal.org packaging script on 2017-10-23
+version: '8.x-1.0-rc1'
+core: '8.x'
+project: 'entity_change_notifier'
+datestamp: 1508791147

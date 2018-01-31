@@ -1,0 +1,19 @@
+uuid: 7083dcb1-8dc0-4411-a34f-e403dad90862
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_block_type
+    - field.storage.block_content.field_copyright_email
+id: block_content.footer_block_type.field_copyright_email
+field_name: field_copyright_email
+entity_type: block_content
+bundle: footer_block_type
+label: 'Copyright email'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

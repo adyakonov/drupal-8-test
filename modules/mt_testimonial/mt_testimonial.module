@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * @file
+ * Contains mt_testimonial.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function mt_testimonial_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the mt_testimonial module.
+    case 'help.page.mt_testimonial':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Configure the content and layout of the Testimonial Content Type.') . '</p>';
+
+      return $output;
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function mt_testimonial_theme() {
+  // Theme for mt_testimonial module.
+  $themes['mt_testimonial'] = [
+    'template'  => 'mt_testimonial',
+    'variables' => [
+      'data' => NULL,
+    ],
+  ];
+
+  return $themes;
+
+}

@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 'Showcase Tags'
+vid: mt_showcase_tags
+description: ''
+hierarchy: 0
+weight: 0

@@ -1,0 +1,23 @@
+uuid: 68adb5f8-3a99-4711-8040-0f5bb73ea788
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: T8-fliZTgpFki8tnBXmTtXB2syppDhlTuPQ7Btsqnzs
+id: paragraph.field_mt_collapse_title
+field_name: field_mt_collapse_title
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

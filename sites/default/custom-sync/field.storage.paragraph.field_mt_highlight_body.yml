@@ -1,0 +1,21 @@
+uuid: bdb19f58-dde7-4f92-94ed-48610345b9d6
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+_core:
+  default_config_hash: 4-5rpzbinj7m6ZJXw6P7lfBvKnu6idRmxKpG1bcHpRk
+id: paragraph.field_mt_highlight_body
+field_name: field_mt_highlight_body
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

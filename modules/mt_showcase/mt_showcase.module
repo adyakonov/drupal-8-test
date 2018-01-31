@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * @file
+ * Contains mt_showcase.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function mt_showcase_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the mt_showcase module.
+    case 'help.page.mt_showcase':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Configure the content and layout of the Showcase Content Type.') . '</p>';
+
+      return $output;
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function mt_showcase_theme() {
+  // Theme for mt_showcase module.
+  $themes['mt_showcase'] = [
+    'template'  => 'mt_showcase',
+    'variables' => [
+      'data' => NULL,
+    ],
+  ];
+
+  return $themes;
+
+}

@@ -1,0 +1,59 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_sc_highlight
+    - node.type.mt_service
+    - paragraphs.paragraphs_type.mt_sc_highlight
+  module:
+    - entity_reference_revisions
+id: node.mt_service.field_mt_sc_highlight
+field_name: field_mt_sc_highlight
+entity_type: node
+bundle: mt_service
+label: Highlight
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      mt_sc_highlight: mt_sc_highlight
+    target_bundles_drag_drop:
+      mt_collapse:
+        weight: 12
+        enabled: false
+      mt_dropdown:
+        weight: 13
+        enabled: false
+      mt_fancy_linked_image:
+        weight: 14
+        enabled: false
+      mt_fancy_tab:
+        weight: 15
+        enabled: false
+      mt_featured_linked_text_tile:
+        weight: 16
+        enabled: false
+      mt_sc_highlight:
+        enabled: true
+        weight: 17
+      mt_main_slideshow_slide:
+        weight: 18
+        enabled: false
+      mt_map_location:
+        weight: 19
+        enabled: false
+      mt_media_tab:
+        weight: 20
+        enabled: false
+      mt_tab:
+        weight: 21
+        enabled: false
+      mt_video_gallery_slide:
+        weight: 22
+        enabled: false
+field_type: entity_reference_revisions

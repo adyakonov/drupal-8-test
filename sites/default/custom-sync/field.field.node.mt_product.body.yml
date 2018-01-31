@@ -1,0 +1,24 @@
+uuid: 91d357ee-5109-4843-b058-c5ac5ee3023f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.mt_product
+  module:
+    - text
+_core:
+  default_config_hash: qAXmAGNnf5t7YQU-djoBwI8-FbFwFuyFbD0JpzOM-bA
+id: node.mt_product.body
+field_name: body
+entity_type: node
+bundle: mt_product
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

@@ -1,0 +1,83 @@
+<?php
+
+/**
+ * @file
+ * Contains superdrupal.module.
+ */
+
+use Drupal\block\Entity\Block;
+use Drupal\Core\Render\Element;
+
+/**
+ * Implements hook_theme().
+ */
+function superdrupal_theme() {
+  $themes['superdrupal_base'] = array(
+    'variables' => array('data' => array()),
+  );
+
+  $themes['superdrupal_profile'] = array(
+    'render element' => 'elements',
+  );
+
+  // Theme for superdrupalinject block.
+  $themes['superdrupalinject'] = [
+    'template' => 'superdrupalinject',
+    'variables' => [
+      'data' => NULL,
+    ],
+  ];
+
+  return $themes;
+}
+
+/**
+ * Implements template_preprocess_theme().
+ */
+function template_preprocess_superdrupal_profile(&$variables) {
+  $variables['super_profile'] = $variables['elements']['#super_profile'];
+  // Helpful $content variable for templates.
+  foreach (Element::children($variables['elements']) as $key) {
+    $variables['content'][$key] = $variables['elements'][$key];
+  }
+}
+
+/**
+ * Implements hook_library_info_build().
+ */
+function superdrupal_library_info_alter(&$libraries, $extension) {
+  if ($extension == 'superdrupal' && isset($libraries['superdrupalinject'])) {
+    // Get configurations.
+    $config = \Drupal::config('superdrupalinject.settings');
+    $config_data = $config->get();
+
+    // Override JS library.
+    $libraries['superdrupalinject']['js'] = [
+      $config_data['superdrupalinject_js'] => [],
+    ];
+  }
+}
+
+/**
+ * Implements hook_page_attachments().
+ */
+function superdrupal_page_attachments(array &$attachments) {
+
+  $config = \Drupal::config('superdrupalinject.settings');
+  // Attach library.
+  $attachments['#attached']['library'][] = 'superdrupal/superdrupalinject';
+  // Override CSS library.
+  $attachments['#attached']['html_head'][] = [
+    [
+      '#type' => 'html_tag',
+      '#tag' => 'link',
+      '#attributes' => [
+        'href' => $config->get('superdrupalinject_css'),
+        'rel' => 'stylesheet',
+        'data-id' => 'superdrupalinject-css',
+      ],
+    ],
+    'superdrupalinject-css',
+  ];
+
+}

@@ -1,0 +1,30 @@
+uuid: 2d9c5ad9-a62b-432a-8142-3bf376ec04a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_shc_showcase_tags
+    - node.type.mt_showcase
+    - taxonomy.vocabulary.mt_showcase_tags
+_core:
+  default_config_hash: _re5jna8QnkoVs4k1kR14D5nlib6p0J3vCMkr9sNfBQ
+id: node.mt_showcase.field_mt_shc_showcase_tags
+field_name: field_mt_shc_showcase_tags
+entity_type: node
+bundle: mt_showcase
+label: 'Showcase Tags'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      mt_showcase_tags: mt_showcase_tags
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

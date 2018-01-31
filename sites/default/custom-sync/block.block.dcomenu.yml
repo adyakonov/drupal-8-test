@@ -1,0 +1,24 @@
+uuid: 6b00368d-3440-40f8-8895-b32d22574e26
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.dco-menu
+  module:
+    - system
+  theme:
+    - bootstrap_child
+id: dcomenu
+theme: bootstrap_child
+region: header
+weight: -8
+provider: null
+plugin: 'system_menu_block:dco-menu'
+settings:
+  id: 'system_menu_block:dco-menu'
+  label: 'DCO menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

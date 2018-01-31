@@ -1,0 +1,11 @@
+uuid: 0e488e5b-6797-4d78-9208-3950acf01326
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: sS3VF_KiZLGMf_uEDQBl_ojDYS1XmTC0s5F6eXby-rs
+name: 'Product Categories'
+vid: mt_collections
+description: ''
+hierarchy: 0
+weight: 0

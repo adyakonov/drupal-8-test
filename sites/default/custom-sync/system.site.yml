@@ -1,0 +1,14 @@
+uuid: 5288e98a-8a2c-4090-ad44-66974df375e4
+name: drupal_8_4
+mail: admin@admin.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/11
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: AyT9s8OUcclfALRE_imByOMgtZ19eOlqdF6zI3p7yqo

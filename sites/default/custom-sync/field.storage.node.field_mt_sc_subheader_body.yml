@@ -1,0 +1,21 @@
+uuid: 097c1fbe-e382-4444-a593-22b756a912fd
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+_core:
+  default_config_hash: C6cwT4xJ9uriB2aUbduQzpxNGE2Emd41qd_q6jdNEd8
+id: node.field_mt_sc_subheader_body
+field_name: field_mt_sc_subheader_body
+entity_type: node
+type: text_with_summary
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

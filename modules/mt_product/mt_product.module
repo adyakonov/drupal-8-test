@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * @file
+ * Contains mt_product.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function mt_product_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the mt_contenttype module.
+    case 'help.page.mt_product':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Configure the content and layout of the Product.') . '</p>';
+
+      return $output;
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function mt_product_theme() {
+  // Theme for mt_contenttype module.
+  $themes['mt_product'] = [
+    'template'  => 'mt_product',
+    'variables' => [
+      'data' => NULL,
+    ],
+  ];
+
+  return $themes;
+
+}

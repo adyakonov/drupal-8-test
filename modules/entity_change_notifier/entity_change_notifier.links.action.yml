@@ -1,0 +1,10 @@
+entity.ecn_destination.add_form:
+  route_name: entity.ecn_destination.add_form
+  title: 'Add Destination'
+  appears_on:
+    - entity.ecn_destination.collection
+entity.ecn_publisher.add_form:
+  route_name: entity.ecn_publisher.add_form
+  title: 'Add Publisher'
+  appears_on:
+    - entity.ecn_publisher.collection

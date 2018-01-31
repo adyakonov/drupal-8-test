@@ -1,0 +1,25 @@
+uuid: 892ed381-fc31-4f1c-9b5e-70b323eab205
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.homepage_slider
+    - field.storage.block_content.field_slider_speed
+id: block_content.homepage_slider.field_slider_speed
+field_name: field_slider_speed
+entity_type: block_content
+bundle: homepage_slider
+label: 'Slider speed'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 6000
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

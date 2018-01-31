@@ -1,0 +1,22 @@
+uuid: 275abd84-95e3-4817-9d0b-f8af6422e022
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_hl_body
+    - paragraphs.paragraphs_type.highlight1
+  module:
+    - text
+id: paragraph.highlight1.field_hl_body
+field_name: field_hl_body
+entity_type: paragraph
+bundle: highlight1
+label: 'HL Body'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

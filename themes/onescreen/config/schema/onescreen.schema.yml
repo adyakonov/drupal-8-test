@@ -1,0 +1,5 @@
+# Required to validate default theme settings.
+
+onescreen.settings:
+  type: theme_settings
+  label: 'Onescreen settings'

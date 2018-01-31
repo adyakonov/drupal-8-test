@@ -1,0 +1,12 @@
+uuid: e0fd5b36-4d02-44b6-b879-68a955f091bd
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: 4wPGlZI-kVQBE_Obu8B1qkzzeiA7fvrpR_VTcXy06wg
+id: node.mt_slide_view
+label: 'Slide View'
+targetEntityType: node
+cache: true

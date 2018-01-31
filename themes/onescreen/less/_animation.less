@@ -1,0 +1,190 @@
+// out: false
+
+/*
+
+  Animations
+
+*/
+
+
+/* Mixins
+========================*/
+.keyframes(@name; @arguments) {
+  @-moz-keyframes @name { @arguments(); }
+  @-webkit-keyframes @name { @arguments(); }
+  @keyframes @name { @arguments(); }
+}
+
+.animation(@arguments) {
+  -webkit-animation: @arguments;
+  -moz-animation: @arguments;
+  animation: @arguments;
+}
+
+
+/* Basic classes
+==========================*/
+.animated {
+  animation-duration: 1.2s;
+  animation-fill-mode: both;
+}
+
+.ta-hidden {
+  opacity: 0;
+}
+.ta-visible {
+  opacity: 1;
+}
+
+.animated.infinite {
+  animation-iteration-count: infinite;
+}
+
+.animated.hinge {
+  animation-duration: 2s;
+}
+
+.animated.flipOutX,
+.animated.flipOutY,
+.animated.bounceIn,
+.animated.bounceOut {
+  animation-duration: .75s;
+}
+
+
+/* Keyframes
+==================*/
+.keyframes(flash; {
+
+  from, 
+  50%, 
+  to {
+    opacity: 1;
+  }
+
+  25%, 
+  75% {
+    opacity: 0;
+  }
+});
+
+.keyframes(fadeIn; {
+
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+});
+
+.keyframes(fadeInDown; {
+
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+});
+
+.keyframes(fadeInLeft; {
+
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+});
+
+.keyframes(fadeInRight; {
+
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+});
+
+.keyframes(fadeInUp; {
+
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+});
+
+.keyframes(fadeOut; {
+
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+});
+
+.keyframes(slideInUp; {
+  
+  from {
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+});
+
+
+/* Animation classes
+========================*/
+.flash {
+  animation-name: flash;
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+.fadeInDown {
+  animation-name: fadeInDown;
+}
+
+.fadeInLeft {
+  animation-name: fadeInLeft;
+}
+
+.fadeInRight {
+  animation-name: fadeInRight;
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+
+.fadeOut {
+  animation-name: fadeOut;
+}
+
+.slideInUp {
+  animation-name: slideInUp;
+}

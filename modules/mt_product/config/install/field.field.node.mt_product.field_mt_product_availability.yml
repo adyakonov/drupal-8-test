@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_product_availability
+    - node.type.mt_product
+  module:
+    - options
+id: node.mt_product.field_mt_product_availability
+field_name: field_mt_product_availability
+entity_type: node
+bundle: mt_product
+label: Availability
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,112 @@
+uuid: 168b9d10-acb9-4138-955e-e017eff423e9
+langcode: en
+status: true
+dependencies:
+  module:
+    - social_media_links
+  theme:
+    - bootstrap_child
+id: socialmedialinks
+theme: bootstrap_child
+region: footer
+weight: 0
+provider: null
+plugin: social_media_links_block
+settings:
+  id: social_media_links_block
+  label: 'Social Media Links'
+  provider: social_media_links
+  label_display: '0'
+  platforms:
+    googleplus:
+      value: ''
+      description: ''
+      weight: '-10'
+    contact:
+      value: ''
+      description: ''
+      weight: '-9'
+    flickr:
+      value: ''
+      description: ''
+      weight: '-8'
+    youtube_channel:
+      value: ''
+      description: ''
+      weight: '-7'
+    drupal:
+      value: ''
+      description: ''
+      weight: '-6'
+    youtube:
+      value: ''
+      description: ''
+      weight: '-5'
+    email:
+      value: ''
+      description: ''
+      weight: '-4'
+    facebook:
+      value: 'https://www.facebook.com/'
+      description: ''
+      weight: '-3'
+    github:
+      value: ''
+      description: ''
+      weight: '-2'
+    pinterest:
+      value: ''
+      description: ''
+      weight: '-1'
+    rss:
+      value: ''
+      description: ''
+      weight: '0'
+    slideshare:
+      value: ''
+      description: ''
+      weight: '1'
+    twitter:
+      value: 'https://www.twitter.com/'
+      description: ''
+      weight: '2'
+    instagram:
+      value: 'https://www.instagram.com/'
+      description: ''
+      weight: '3'
+    bitbucket:
+      value: ''
+      description: ''
+      weight: '4'
+    vimeo:
+      value: ''
+      description: ''
+      weight: '5'
+    vkontakte:
+      value: ''
+      description: ''
+      weight: '6'
+    linkedin:
+      value: ''
+      description: ''
+      weight: '7'
+    behance:
+      value: ''
+      description: ''
+      weight: '8'
+    tumblr:
+      value: ''
+      description: ''
+      weight: '9'
+  appearance:
+    orientation: h
+    show_name: 0
+  link_attributes:
+    target: '<none>'
+    rel: '<none>'
+  iconset:
+    style: 'fontawesome:2x'
+    installed_iconsets:
+      fontawesome:
+        examples: ''
+visibility: {  }

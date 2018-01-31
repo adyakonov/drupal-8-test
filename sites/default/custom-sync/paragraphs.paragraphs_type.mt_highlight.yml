@@ -1,0 +1,11 @@
+uuid: a28fefe1-7863-497d-9051-30533fff0745
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Fb0hYmac3tRZsgIurDmT6qN321K-QFi0YktOMPQdHP0
+id: mt_highlight
+label: Highlight
+icon_uuid: null
+description: null
+behavior_plugins: {  }

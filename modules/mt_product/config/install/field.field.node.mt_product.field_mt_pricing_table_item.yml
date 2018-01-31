@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_pricing_table_item
+    - node.type.mt_product
+id: node.mt_product.field_mt_pricing_table_item
+field_name: field_mt_pricing_table_item
+entity_type: node
+bundle: mt_product
+label: 'Pricing Table Feature'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,14 @@
+name: MT Showcase
+description: Drupal8 module.
+package: More than Themes
+
+type: module
+core: 8.x
+
+version:
+
+configure: mt_showcase.settings
+
+dependencies:
+  - datetime:datetime
+  - link:link

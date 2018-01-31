@@ -1,0 +1,7 @@
+entity_change_notifier.settings:
+  path: '/admin/config/services/entity-change-notifier'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'Entity change notifier'
+  requirements:
+    _permission: 'administer site configuration'

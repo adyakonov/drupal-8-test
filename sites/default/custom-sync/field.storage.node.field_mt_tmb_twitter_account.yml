@@ -1,0 +1,23 @@
+uuid: e320316f-b06e-4552-9d44-42ee8776e623
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: Z_Kf65IPmztxtDR5pDWHtW4Ue6aMLS9ygsQyCZsksYI
+id: node.field_mt_tmb_twitter_account
+field_name: field_mt_tmb_twitter_account
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Service
+type: mt_service
+description: 'A Service post is ideal for creating and displaying services. It has the option to be displayed into front page slide show. It provides the ability to attach an image which is automatically adjusted to fit into the websites layout. What’s particularly cool about a Service post, is that it provides the ability to attach a series of images, thumbnails of which are automatically created and adjusted to fit into the website layout. Service post enables free tagging (just like labels), taking the bests from the taxonomy system.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

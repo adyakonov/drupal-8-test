@@ -1,0 +1,57 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.mt_benefit.body
+    - field.field.node.mt_benefit.field_image
+    - field.field.node.mt_benefit.field_mt_bf_banner_image
+    - field.field.node.mt_benefit.field_mt_bf_font_awesome_classes
+    - field.field.node.mt_benefit.field_mt_bf_slideshow
+    - field.field.node.mt_benefit.field_mt_bf_slideshow_image
+    - field.field.node.mt_benefit.field_mt_bf_slideshow_text
+    - field.field.node.mt_benefit.field_mt_bf_subheader_body
+    - field.field.node.mt_benefit.field_mt_bf_video
+    - field.field.node.mt_benefit.field_mt_bf_tags
+    - image.style.large
+    - node.type.mt_benefit
+  module:
+    - image
+    - text
+    - user
+id: node.mt_benefit.teaser
+targetEntityType: node
+bundle: mt_benefit
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 1
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_image:
+    type: image
+    weight: 0
+    label: hidden
+    settings:
+      image_style: large
+      image_link: content
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_mt_bf_banner_image: true
+  field_mt_bf_font_awesome_classes: true
+  field_mt_bf_slideshow: true
+  field_mt_bf_slideshow_image: true
+  field_mt_bf_slideshow_text: true
+  field_mt_bf_subheader_body: true
+  field_mt_bf_video: true
+  field_mt_bf_tags: true

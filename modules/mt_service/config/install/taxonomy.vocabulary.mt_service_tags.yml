@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 'Service Tags'
+vid: mt_service_tags
+description: ''
+hierarchy: 0
+weight: 0

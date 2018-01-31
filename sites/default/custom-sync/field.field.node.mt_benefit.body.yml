@@ -1,0 +1,24 @@
+uuid: da0cc658-2081-4b0a-bc7a-c12e536c235c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.mt_benefit
+  module:
+    - text
+_core:
+  default_config_hash: Pg67YEj0pr8ridli1lLGMgAYoBm7w8nslAKGanXz2r0
+id: node.mt_benefit.body
+field_name: body
+entity_type: node
+bundle: mt_benefit
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

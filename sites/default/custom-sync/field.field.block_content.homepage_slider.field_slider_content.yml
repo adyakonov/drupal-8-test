@@ -1,0 +1,31 @@
+uuid: a2cd161e-2daf-42b7-8843-0b1078b9e8eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.homepage_slider
+    - field.storage.block_content.field_slider_content
+    - paragraphs.paragraphs_type.homepage_slider
+  module:
+    - entity_reference_revisions
+id: block_content.homepage_slider.field_slider_content
+field_name: field_slider_content
+entity_type: block_content
+bundle: homepage_slider
+label: 'Slider Content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      homepage_slider: homepage_slider
+    target_bundles_drag_drop:
+      homepage_slider:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions

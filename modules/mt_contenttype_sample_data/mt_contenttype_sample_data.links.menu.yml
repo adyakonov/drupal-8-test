@@ -1,0 +1,6 @@
+mt_contenttype_sample_data.settings_menu:
+  title: 'MT Content Type Sample Data'
+  parent: system.admin_config
+  description: ''
+  route_name: mt_contenttype_sample_data.admin_index
+  weight: 0

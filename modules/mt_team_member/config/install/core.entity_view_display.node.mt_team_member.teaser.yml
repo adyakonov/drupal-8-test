@@ -1,0 +1,57 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.mt_team_member.body
+    - field.field.node.mt_team_member.field_mt_tmb_banner_image
+    - field.field.node.mt_team_member.field_mt_tmb_facebook_account
+    - field.field.node.mt_team_member.field_mt_tmb_linkedin_account
+    - field.field.node.mt_team_member.field_mt_tmb_member_photo
+    - field.field.node.mt_team_member.field_mt_tmb_slideshow
+    - field.field.node.mt_team_member.field_mt_tmb_slideshow_image
+    - field.field.node.mt_team_member.field_mt_tmb_slideshow_text
+    - field.field.node.mt_team_member.field_mt_tmb_subtitle
+    - field.field.node.mt_team_member.field_mt_tmb_twitter_account
+    - image.style.mt_member_photo
+    - node.type.mt_team_member
+  module:
+    - image
+    - text
+    - user
+id: node.mt_team_member.teaser
+targetEntityType: node
+bundle: mt_team_member
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 0
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_mt_tmb_member_photo:
+    type: image
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      image_style: mt_member_photo
+      image_link: content
+    third_party_settings: {  }
+  links:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_mt_tmb_banner_image: true
+  field_mt_tmb_facebook_account: true
+  field_mt_tmb_linkedin_account: true
+  field_mt_tmb_slideshow: true
+  field_mt_tmb_slideshow_image: true
+  field_mt_tmb_slideshow_text: true
+  field_mt_tmb_subtitle: true
+  field_mt_tmb_twitter_account: true

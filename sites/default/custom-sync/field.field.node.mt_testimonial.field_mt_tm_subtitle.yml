@@ -1,0 +1,21 @@
+uuid: 9211dc26-94fa-4c05-8d82-dd03b6b423b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_tm_subtitle
+    - node.type.mt_testimonial
+_core:
+  default_config_hash: JjZ4Kq8HnWstlXobaZsXBCjUgN9BruIkv1AWIUpro18
+id: node.mt_testimonial.field_mt_tm_subtitle
+field_name: field_mt_tm_subtitle
+entity_type: node
+bundle: mt_testimonial
+label: Subtitle
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

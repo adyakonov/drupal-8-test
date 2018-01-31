@@ -1,0 +1,21 @@
+uuid: 2ed14a81-d358-4d44-9d47-7e31c16e3dce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mt_highlight_title
+    - paragraphs.paragraphs_type.mt_highlight
+_core:
+  default_config_hash: 2YejaHWLs92tLWb6nVU0GnKkIF_IOqeUJHdtKu32Z4c
+id: paragraph.mt_highlight.field_mt_highlight_title
+field_name: field_mt_highlight_title
+entity_type: paragraph
+bundle: mt_highlight
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

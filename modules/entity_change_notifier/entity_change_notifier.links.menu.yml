@@ -1,0 +1,17 @@
+entity_change_notifier.settings:
+  title: 'Entity change notifier'
+  description: 'Configure entities and bundles to be sent to external systems, such as queues, notification services, and webhooks.'
+  route_name: 'entity_change_notifier.settings'
+  parent: system.admin_config_services
+
+entity.ecn_destination.collection:
+  title: 'Destinations'
+  description: 'Configure external destinations to send entity change notifications to.'
+  route_name: entity.ecn_destination.collection
+  parent: entity_change_notifier.settings
+
+entity.ecn_publisher.collection:
+  title: 'Publishers'
+  description: 'Configure publishers for sending entity change notifications.'
+  route_name: entity.ecn_publisher.collection
+  parent: entity_change_notifier.settings

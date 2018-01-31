@@ -1,0 +1,40 @@
+uuid: c521d728-f722-4232-a749-07587bdd401f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_tm_slideshow_image
+    - node.type.mt_testimonial
+  module:
+    - image
+_core:
+  default_config_hash: zo8wIoUD6YOVcM9AJG8KRnUA-7OaHPKz1OoPuPkbl-c
+id: node.mt_testimonial.field_mt_tm_slideshow_image
+field_name: field_mt_tm_slideshow_image
+entity_type: node
+bundle: mt_testimonial
+label: 'Slideshow image'
+description: "Recommended pixel dimensions for Fullscreen Slideshow - W: 1920 px / H: 1080 px.\r\n<br>Recommended pixel dimensions for Full-Width Slideshow - W: 1920 px / H: 500 px.\r\n<br>Recommended pixel dimensions for Boxed-Width Slideshow - W: 1140 px / H: 500 px."
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: true
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

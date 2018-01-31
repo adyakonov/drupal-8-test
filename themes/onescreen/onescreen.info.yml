@@ -1,0 +1,41 @@
+name: Onescreen Theme
+type: theme
+description: 'Theme'
+
+# Regions
+regions:
+  header: 'Header'
+  main_navigation: 'Main Navigation'
+  preface_first: 'Preface First'
+  preface_second: 'Preface Second'
+  preface_third: 'Preface Third'
+  help: 'Help'
+  highlighted: 'Highlighted'
+  landing_page: 'Landing Page'
+  content_top: 'Content Top'
+  sidebar_first: 'Sidebar First'
+  content: 'Content'
+  sidebar_second: 'Sidebar Second' 
+  content_bottom: 'Content Bottom'
+  footer: 'Footer'
+  footer_first: 'First Bottom'
+  footer_second: 'Second Bottom'
+  footer_third: 'Third Bottom'
+  copyright_first: 'Copyright First'
+  copyright_second: 'Copyright Second'  
+
+# Libraries
+libraries:
+  - onescreen/global-css
+  - onescreen/global-js
+  - onescreen/slider-js
+  - onescreen/animation-js
+
+# core: '8.x'
+# datestamp: 1476881102
+
+# Information added by Drupal.org packaging script on 2017-10-30
+version: '8.x-1.0'
+core: '8.x'
+project: 'onescreen'
+datestamp: 1509395591

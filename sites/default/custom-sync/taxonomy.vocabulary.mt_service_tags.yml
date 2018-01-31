@@ -1,0 +1,11 @@
+uuid: 71b52889-ce4d-4e14-92bb-41a7c9c85536
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Wehe7VnDYva7rX5VImOm53ytnm8Mv5pcAdOyQ6vjxwk
+name: 'Service Tags'
+vid: mt_service_tags
+description: ''
+hierarchy: 0
+weight: 0

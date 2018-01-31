@@ -1,0 +1,23 @@
+uuid: 7802dc76-f587-4539-9d0a-2ed9f13510b4
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: nIb7o9JNNBAiqFNFiA1Q4beMWCp3ppOMumg2_P60Sag
+id: node.field_mt_sse_bg_video_vimeo
+field_name: field_mt_sse_bg_video_vimeo
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

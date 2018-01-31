@@ -1,0 +1,47 @@
+
+{% set node_id = content.field_connect_page[0]['#plain_text']|abs %}
+
+  <div class="siteFooter-inner">
+    <div class="siteFooter-preFooter">
+      <div class="siteFooter-preFooter-body">
+        <div class="footerConnect">
+          <a href="{{ path('entity.node.canonical', {'node': node_id}) }}" class="btn btn--blue btn--connect">
+            {{ content.field_connect_button_te[0]['#context'].value }}</a>
+        </div>
+        <div class="footerDescription">{{ content.body }}</div>
+      </div>
+      <div class="footerGoTop">
+        <button type="button" class="goTop js-goTop">RETURN TO TOP</button>
+      </div>
+    </div>
+
+    <div class="siteFooter-body">
+      {% if content.field_footer_logo %}
+      <div class="siteFooter-body-logo">
+        <a href="{{ url('<front>') }}">
+          {{ content.field_footer_logo }}
+        </a>
+      </div>
+      {% endif %}
+
+      <div class="siteFooter-body-copyright">
+        <ul>
+
+          {% if content.field_copyright_1_part %}
+            <li>{{ content.field_copyright_1_part[0]['#context'].value }}</li>
+          {% endif %}
+          {% if content.field_copyright_2_part %}
+            <li>{{ content.field_copyright_2_part[0]['#context'].value }}</li>
+          {% endif %}
+          {% if content.field_copyright_3_part %}
+            <li><a href="tel:{{ content.field_copyright_3_part[0]['#context'].value }}">{{ content.field_copyright_3_part[0]['#context'].value }}</a></li>
+          {% endif %}
+          {% if content.field_copyright_email %}
+            <li><a href="mailto:{{ content.field_copyright_email[0]['#context'].value }}">{{ content.field_copyright_email[0]['#context'].value }}</a></li>
+          {% endif %}
+
+        </ul>
+      </div>
+
+    </div>
+  </div>

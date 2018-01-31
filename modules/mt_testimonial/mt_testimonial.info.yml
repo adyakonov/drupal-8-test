@@ -1,0 +1,14 @@
+name: MT Testimonial
+description: Drupal8 module.
+package: More than Themes
+
+type: module
+core: 8.x
+
+version:
+
+configure: mt_testimonial.settings
+
+dependencies:
+  - datetime:datetime
+  - link:link

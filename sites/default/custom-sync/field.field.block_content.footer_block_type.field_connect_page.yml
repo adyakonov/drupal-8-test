@@ -1,0 +1,28 @@
+uuid: 6ad7b333-66f5-4315-9aa8-d2c0760a9fa3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_block_type
+    - field.storage.block_content.field_connect_page
+    - node.type.connect_page
+id: block_content.footer_block_type.field_connect_page
+field_name: field_connect_page
+entity_type: block_content
+bundle: footer_block_type
+label: 'Connect page'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      connect_page: connect_page
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

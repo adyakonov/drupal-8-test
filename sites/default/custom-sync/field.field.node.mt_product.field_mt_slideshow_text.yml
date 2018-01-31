@@ -1,0 +1,23 @@
+uuid: 3ef2cd8e-7c8b-4021-8e66-a397b0da4504
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_slideshow_text
+    - node.type.mt_product
+  module:
+    - text
+_core:
+  default_config_hash: uy7Agcv_L8blSbVRSPFatyh6NoX9iwhE4yJQWYjSslg
+id: node.mt_product.field_mt_slideshow_text
+field_name: field_mt_slideshow_text
+entity_type: node
+bundle: mt_product
+label: 'Slideshow text'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

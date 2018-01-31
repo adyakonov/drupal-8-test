@@ -1,0 +1,131 @@
+uuid: 2bbb7d22-099f-43b5-af2e-f267d203d07d
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.test_papanel_page
+    - views.view.content_recent
+    - views.view.mt_simple_products
+    - views.view.who_s_new
+    - views.view.who_s_online
+  module:
+    - ctools_block
+    - panels
+    - search
+    - system
+    - views
+id: test_papanel_page-panels_variant-0
+label: Panels
+variant: panels_variant
+variant_settings:
+  blocks:
+    59ea4d9c-8343-44be-a745-f23f6135a5ab:
+      id: 'views_block:mt_simple_products-mt_simple_product_block'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: top
+      weight: 0
+      uuid: 59ea4d9c-8343-44be-a745-f23f6135a5ab
+      context_mapping: {  }
+    f4909775-7858-46e9-af14-8ed7c1db182f:
+      id: 'entity_field:user:name'
+      label: Name
+      provider: ctools_block
+      label_display: visible
+      formatter:
+        label: above
+        type: string
+        settings:
+          link_to_entity: false
+        third_party_settings: {  }
+        weight: 0
+      region: first
+      weight: 0
+      uuid: f4909775-7858-46e9-af14-8ed7c1db182f
+      context_mapping:
+        entity: current_user
+    27d25fea-6c51-4cf4-882d-e278d59efc1e:
+      id: 'entity_field:user:mail'
+      label: Email
+      provider: ctools_block
+      label_display: visible
+      formatter:
+        label: above
+        type: basic_string
+        settings: {  }
+        third_party_settings: {  }
+        weight: 0
+      region: first
+      weight: 0
+      uuid: 27d25fea-6c51-4cf4-882d-e278d59efc1e
+      context_mapping:
+        entity: current_user
+    2f0a1ee6-c69c-4e12-8774-9af1ac9dce7a:
+      id: 'views_block:content_recent-block_1'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: second
+      weight: 0
+      uuid: 2f0a1ee6-c69c-4e12-8774-9af1ac9dce7a
+      context_mapping: {  }
+    0be05d2d-1247-4f55-aff2-c5dd9d4a5d76:
+      id: search_form_block
+      label: 'Search form'
+      provider: search
+      label_display: visible
+      region: third
+      weight: 0
+      uuid: 0be05d2d-1247-4f55-aff2-c5dd9d4a5d76
+      context_mapping: {  }
+    ff9d3c71-289e-44b1-b535-cf5916d7d6e4:
+      id: system_powered_by_block
+      label: 'Powered by Drupal'
+      provider: system
+      label_display: '0'
+      region: third
+      weight: 0
+      uuid: ff9d3c71-289e-44b1-b535-cf5916d7d6e4
+      context_mapping: {  }
+    4f57f359-0eb5-4ea9-a22b-f6881dcfa119:
+      id: 'views_block:who_s_online-who_s_online_block'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: bottom
+      weight: 0
+      uuid: 4f57f359-0eb5-4ea9-a22b-f6881dcfa119
+      context_mapping: {  }
+    98186cc9-961a-4492-8a57-822960a59695:
+      id: 'views_block:who_s_new-block_1'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: bottom
+      weight: 0
+      uuid: 98186cc9-961a-4492-8a57-822960a59695
+      context_mapping: {  }
+  id: panels_variant
+  uuid: b42dd132-ea25-487f-9102-363dcaddee53
+  label: null
+  weight: 0
+  layout: layout_threecol_25_50_25
+  layout_settings: {  }
+  page_title: ''
+  storage_type: page_manager
+  storage_id: test_papanel_page-panels_variant-0
+  builder: standard
+page: test_papanel_page
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

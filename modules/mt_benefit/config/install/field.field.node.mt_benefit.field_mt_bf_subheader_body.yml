@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_bf_subheader_body
+    - node.type.mt_benefit
+  module:
+    - text
+id: node.mt_benefit.field_mt_bf_subheader_body
+field_name: field_mt_bf_subheader_body
+entity_type: node
+bundle: mt_benefit
+label: 'Subheader body'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

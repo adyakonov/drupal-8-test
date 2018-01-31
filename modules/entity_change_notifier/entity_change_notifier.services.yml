@@ -1,0 +1,11 @@
+services:
+  logger.channel.entity_change_notifier:
+    parent: logger.channel_base
+    arguments: ['entity_change_notifier']
+
+  entity_change_notifier.message_destination_manager:
+    class: Drupal\entity_change_notifier\Plugin\MessageDestination\MessageDestinationPluginManager
+    parent: default_plugin_manager
+  entity_change_notifier.entity_publisher:
+    class: Drupal\entity_change_notifier\EntityPublisher
+    arguments: ['@entity_type.manager', '@queue', '@logger.channel.entity_change_notifier','@entity_change_notifier.message_destination_manager', '@datetime.time']

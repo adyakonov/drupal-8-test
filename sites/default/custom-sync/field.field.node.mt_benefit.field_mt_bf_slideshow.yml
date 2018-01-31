@@ -1,0 +1,25 @@
+uuid: dd1e6c6c-ac88-42a3-8dd3-89b595fead36
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_bf_slideshow
+    - node.type.mt_benefit
+_core:
+  default_config_hash: De1p9NsrGzdVm-OgAgLkL5-V57nvpAr5AFOCfgZFlcQ
+id: node.mt_benefit.field_mt_bf_slideshow
+field_name: field_mt_bf_slideshow
+entity_type: node
+bundle: mt_benefit
+label: 'Promote to front page slideshow'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,22 @@
+uuid: 80469ee8-bab8-4485-bb31-bfd56fca6923
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+_core:
+  default_config_hash: II9-VarZvAXowGthyOmw0IL7nhcInKBh3qsxc-gwg4U
+id: node.field_mt_shc_clients_tags
+field_name: field_mt_shc_clients_tags
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

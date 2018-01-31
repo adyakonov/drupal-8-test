@@ -1,0 +1,20 @@
+uuid: b0229042-04e9-487c-a9b9-6ccb78f8ddad
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: yyFB82rilvjW_M0zUIkxE6pHwZYBlT14NTIEEmKkjyc
+name: 'Team Member'
+type: mt_team_member
+description: 'The Team member post is ideal for creating a page for each of your team members. Along with a description of your team member’s position, responsibilities and qualifications, it provides the ability to attach an image, which is automatically adjusted to fit into the website’s layout. And what’s great about Team member posts, is that they are all collected under the “About us” page.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

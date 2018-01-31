@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * @file
+ * Contains mt_benefit.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function mt_benefit_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the mt_benefit module.
+    case 'help.page.mt_benefit':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Configure the content and layout of the Benefit Content Type.') . '</p>';
+
+      return $output;
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function mt_benefit_theme() {
+  // Theme for mt_benefit module.
+  $themes['mt_benefit'] = [
+    'template'  => 'mt_benefit',
+    'variables' => [
+      'data' => NULL,
+    ],
+  ];
+
+  return $themes;
+
+}

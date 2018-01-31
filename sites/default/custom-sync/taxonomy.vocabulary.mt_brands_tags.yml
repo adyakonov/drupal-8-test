@@ -1,0 +1,11 @@
+uuid: 0280fbb2-b166-487f-a1b1-3c2914b35319
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: JKDU_-vfSa8Y2sj-qh7FXNApjab_5maUYJSvwbR9QCk
+name: Clients
+vid: mt_brands_tags
+description: ''
+hierarchy: 0
+weight: 0

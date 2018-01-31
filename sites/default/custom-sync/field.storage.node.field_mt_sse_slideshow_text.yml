@@ -1,0 +1,21 @@
+uuid: 208ec9c7-da65-4f6d-a39e-e99b4fe3d180
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+_core:
+  default_config_hash: VEDyBdVrJhMnYR9X4T-MKUrU1NtuQg7EuOwUX_m8StA
+id: node.field_mt_sse_slideshow_text
+field_name: field_mt_sse_slideshow_text
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

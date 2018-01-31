@@ -1,0 +1,21 @@
+uuid: 6595e586-dcc4-4bd1-8cd5-e721476df342
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_product_code
+    - node.type.mt_product
+_core:
+  default_config_hash: O1WJzFru1Ochl8f6TT6ggEPgtLIKWgwWvz4h4ocI7z0
+id: node.mt_product.field_mt_product_code
+field_name: field_mt_product_code
+entity_type: node
+bundle: mt_product
+label: SKU
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

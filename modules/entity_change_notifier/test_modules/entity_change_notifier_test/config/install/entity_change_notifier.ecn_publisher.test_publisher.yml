@@ -1,0 +1,12 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - entity_change_notifier.ecn_destination.test_destination
+    - node.type.ecn_test
+id: test_publisher
+label: 'Test Publisher'
+destination: test_destination
+publish_types:
+  node:
+    - ecn_test

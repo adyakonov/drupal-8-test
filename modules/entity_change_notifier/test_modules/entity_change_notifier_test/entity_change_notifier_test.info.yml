@@ -1,0 +1,17 @@
+name: 'Entity Change Notifier Test'
+description: 'Provides Entity Change Notifier Test content type and related configuration. '
+type: module
+# core: 8.x
+hidden: true
+dependencies:
+  - drupal:field
+  - drupal:node
+  - drupal:text
+  - drupal:user
+  - entity_change_notifier:entity_change_notifier
+
+# Information added by Drupal.org packaging script on 2017-10-23
+version: '8.x-1.0-rc1'
+core: '8.x'
+project: 'entity_change_notifier'
+datestamp: 1508791147

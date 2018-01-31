@@ -1,0 +1,13 @@
+name: MT Content Type Sample Data
+description: Drupal8 module.
+package: More than Themes
+
+type: module
+core: 8.x
+
+dependencies:
+  - datetime:datetime
+  - link:link
+  - drupal:views
+  - drupal:serialization
+  - mt_contenttype

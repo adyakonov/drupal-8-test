@@ -1,0 +1,21 @@
+uuid: 8267f8b4-6e14-4d4f-a469-86aa0d88a749
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+_core:
+  default_config_hash: vOohCIKUzn6auZP1O-9tHTmT28ifZhl-kBJk3jcOjBw
+id: node.field_mt_shc_slideshow_text
+field_name: field_mt_shc_slideshow_text
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

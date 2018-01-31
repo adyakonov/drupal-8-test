@@ -1,0 +1,33 @@
+<?php
+
+/**
+ * @file
+ * Hook implementations for Entity Change Notifier.
+ */
+
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\entity_change_notifier\Plugin\MessageDestination\MessageDestinationInterface;
+
+/**
+ * Implements hook_entity_insert().
+ */
+function entity_change_notifier_entity_insert(EntityInterface $entity) {
+  $publisher = \Drupal::service('entity_change_notifier.entity_publisher');
+  $publisher->notifyMultiple(MessageDestinationInterface::ENTITY_INSERT, $entity);
+}
+
+/**
+ * Implements hook_entity_update().
+ */
+function entity_change_notifier_entity_update(EntityInterface $entity) {
+  $publisher = \Drupal::service('entity_change_notifier.entity_publisher');
+  $publisher->notifyMultiple(MessageDestinationInterface::ENTITY_UPDATE, $entity);
+}
+
+/**
+ * Implements hook_entity_delete().
+ */
+function entity_change_notifier_entity_delete(EntityInterface $entity) {
+  $publisher = \Drupal::service('entity_change_notifier.entity_publisher');
+  $publisher->notifyMultiple(MessageDestinationInterface::ENTITY_DELETE, $entity);
+}

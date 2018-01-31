@@ -1,0 +1,348 @@
+// out: false
+
+/*
+
+  Basic html elements
+
+*/
+
+* {
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  .box-sizing(border-box);
+}
+
+article, 
+aside, 
+details, 
+figcaption, 
+figure, 
+footer, 
+header, 
+hgroup, 
+menu, 
+nav, 
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+blockquote {
+  position: relative;
+  margin: 30px 20px;
+  padding-left: 25px;
+  font-style: italic;
+  font-weight: bold;
+  color: @blockquote-color;
+  quotes: "\201C""\201D""\2018""\2019";
+
+  &:before {
+    color: @blockquote-color;
+    content: open-quote;
+    font-size: 3em;
+    line-height: .1em;
+    position: absolute;
+    top: 20px;
+    left: -10px;
+  }
+
+  &:after {
+    content: '';
+    content: none;
+  }
+
+  p:last-child {
+    margin: 0;
+  }
+}
+
+q {
+  quotes: none;
+
+  &:before {
+    content: '';
+    content: none;
+  }
+
+  &:after:extend(q:before) {
+
+  }
+}
+
+
+/* Body & Main
+================================================== */
+body {
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  font: 14px/1.6 @main-font;
+  font-weight: 400;
+  color: @main-text;
+}
+
+/* Links */
+a {
+  color: @link;
+
+  &:visited {
+    color: @link;
+  }
+
+  &:hover {
+    color: @link-hover;
+    text-decoration: none;
+  }
+
+  &:active:extend(a:hover) {
+
+  }
+
+  &:focus:extend(a:hover) {
+    
+  }
+
+  &:link {
+    text-decoration: none;
+  }
+}
+
+/* Outline */
+a,
+input,
+textarea,
+button {
+  outline: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+/* Img */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+
+  img {
+    margin: 0;
+  }
+}
+
+
+/* Typography
+================================================== */
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  clear: both;
+  font-family: @main-font;
+}
+
+h1 { 
+  font-size: 30px; 
+}
+
+h2 { 
+  font-size: 24px; 
+}
+
+h3 { 
+  font-size: 20px; 
+}
+
+h4 { 
+  font-size: 18px; 
+}
+
+h5 { 
+  font-size: 16px; 
+}
+
+h6 { 
+  font-size: 14px; 
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
+small {
+  font-size: 80%;
+}
+
+p {
+  margin: 0 0 20px;
+
+  a {
+    line-height: inherit;
+
+    &:visited {
+      line-height: inherit;
+    }
+  }
+}
+
+hr {
+  border: solid rgba(0, 0, 0, 0.2);
+  border-width: 1px 0 0;
+  clear: both;
+  margin: 10px 0 30px;
+  height: 0;
+}
+
+
+/* Tables
+====================================*/
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 0 0 1.5em;
+  width: 100%;
+
+  th {
+    font-weight: bold;
+    padding:10px 10px;
+  }
+
+  tr {
+    padding:5px 5px;
+
+    td {
+      padding:5px 10px;
+    }
+  }
+}
+
+
+/* Lists
+======================================*/
+ul, ol {
+  margin: 0 0 1em 0;
+}
+
+ul {
+  list-style: none;
+  padding-left: 40px;
+
+  ul {
+    margin-bottom: 0;
+  }
+
+  li {
+    list-style: none;
+    margin-left: -17px;
+
+     &:before {
+      color: @logo-title;
+      content: '\f111';
+      font-family: @icon-font;
+      font-size: 8px;
+      padding-right: 10px;
+      display: inline-block;
+      vertical-align: middle;
+     }
+  }
+
+  ol:extend(ul ul) {
+
+  }
+}
+
+ol {
+  list-style-type: decimal;
+  padding-left: 40px;
+
+  ul:extend(ul ul) {
+
+  }
+
+  ol:extend(ul ul) {
+    list-style: upper-alpha;
+
+    ol {
+      list-style: lower-roman;
+
+      ol {
+        list-style: lower-alpha;
+      }
+    }
+  }
+}
+
+
+/* Btn, input and etc.
+======================================*/
+input[type="search"],
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  height: 50px;
+  .box-sizing();
+  border: 0;
+  background: @input-bg;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: @main-text;
+}
+
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  height: @btn-height;
+  .box-sizing();
+  border: 0;
+  border-radius: 5px;
+  padding: 0 40px;
+  line-height: @btn-height;
+  background: @btn-bg;
+  color: @btn-text;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+
+  &:hover {
+    background: @btn-bg-hover;
+  }
+}
+
+textarea {
+  height: 200px;
+  .box-sizing();
+  border: 0;
+  background: @input-bg;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: @main-text;
+  line-height: 1.4;
+}
+
+
+/* Form
+===================== */
+form {
+
+  label {
+    display: block;
+  }
+}

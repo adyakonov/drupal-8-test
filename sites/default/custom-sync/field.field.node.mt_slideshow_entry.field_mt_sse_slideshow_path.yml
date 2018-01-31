@@ -1,0 +1,21 @@
+uuid: 7bed2eab-65dd-4399-a534-0c92653c85ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_sse_slideshow_path
+    - node.type.mt_slideshow_entry
+_core:
+  default_config_hash: sSFozrtKXGTpwjmqJxA_4RhbCBmWhrlazGuwG9uCYGQ
+id: node.mt_slideshow_entry.field_mt_sse_slideshow_path
+field_name: field_mt_sse_slideshow_path
+entity_type: node
+bundle: mt_slideshow_entry
+label: 'Slideshow entry path'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

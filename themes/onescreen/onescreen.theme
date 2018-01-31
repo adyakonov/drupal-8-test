@@ -1,0 +1,93 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the onescreen theme.
+ */
+
+/**
+ * Implements hook_preprocess_HOOK() for HTML document templates.
+ *
+ * Adds body classes if certain regions have content.
+ */
+function onescreen_preprocess_html(&$variables) {
+  // Add information about the number of sidebars.
+  if (!empty($variables['page']['sidebar_first']) && !empty($variables['page']['sidebar_second'])) {
+    $variables['attributes']['class'][] = 'layout-two-sidebars';
+  }
+  elseif (!empty($variables['page']['sidebar_first'])) {
+    $variables['attributes']['class'][] = 'layout-one-sidebar';
+    $variables['attributes']['class'][] = 'layout-sidebar-first';
+  }
+  elseif (!empty($variables['page']['sidebar_second'])) {
+    $variables['attributes']['class'][] = 'layout-one-sidebar';
+    $variables['attributes']['class'][] = 'layout-sidebar-second';
+  }
+  else {
+    $variables['attributes']['class'][] = 'layout-no-sidebars';
+  }
+
+  if ($variables['logged_in']) {
+    $variables['attributes']['class'][] = 'logged';
+  }
+  else {
+    $variables['attributes']['class'][] = 'not-logged';
+  }
+
+  if (empty($variables['root_path'])) {
+    $variables['attributes']['class'][] = 'front';
+  }
+  else {
+    $variables['attributes']['class'][] = 'not-front';
+  }
+
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for Page templates.
+ *
+ * Override or insert variables into the page template.
+ */
+function onescreen_preprocess_page(&$variables) {
+  $variables['slideshow_display'] = theme_get_setting('slideshow_display', 'onescreen');
+
+  $variables['slide1_head'] = theme_get_setting('slide1_head', 'onescreen');
+  $variables['slide1_desc'] = check_markup(theme_get_setting('slide1_desc', 'onescreen'), 'full_html');
+  $variables['slide1_url'] = theme_get_setting('slide1_url', 'onescreen');
+  $variables['slide1_img'] = theme_get_setting('slide1_img', 'onescreen');
+
+  $variables['slide2_head'] = theme_get_setting('slide2_head', 'onescreen');
+  $variables['slide2_desc'] = check_markup(theme_get_setting('slide2_desc', 'onescreen'), 'full_html');
+  $variables['slide2_url'] = theme_get_setting('slide2_url', 'onescreen');
+  $variables['slide2_img'] = theme_get_setting('slide2_img', 'onescreen');
+
+  $variables['slide3_head'] = theme_get_setting('slide3_head', 'onescreen');
+  $variables['slide3_desc'] = check_markup(theme_get_setting('slide3_desc', 'onescreen'), 'full_html');
+  $variables['slide3_url'] = theme_get_setting('slide3_url', 'onescreen');
+  $variables['slide3_img'] = theme_get_setting('slide3_img', 'onescreen');
+
+  $variables['this_year'] = date('Y');
+
+  $variables['preface_col'] = (((bool) $variables['page']['preface_first'] + (bool) $variables['page']['preface_second'] + (bool) $variables['page']['preface_third']));
+  $variables['preface_col'] = ($variables['preface_col'] > 0) ? (12 / $variables['preface_col']) : 0;
+
+  $variables['footer_col'] = (((bool) $variables['page']['footer_first'] + (bool) $variables['page']['footer_second'] + (bool) $variables['page']['footer_third']));
+  $variables['footer_col'] = ($variables['footer_col'] > 0) ? (12 / $variables['footer_col']) : 0;
+
+  $variables['copyright_col'] = (((bool) $variables['page']['copyright_first'] + (bool) $variables['page']['copyright_second']));
+  $variables['copyright_col'] = ($variables['copyright_col'] > 0) ? (12 / $variables['copyright_col']) : 0;
+}
+
+/**
+ * Implements template_preprocess_breadcrumb()
+ *
+ * Override or insert breadcrumbs.
+ */
+function onescreen_preprocess_breadcrumb(&$variables) {
+  if (($node = \Drupal::routeMatch()->getParameter('node')) && $variables['breadcrumb']) {
+    $variables['breadcrumb'][] = [
+      'text' => $node->getTitle(),
+      'url' => $node->URL(),
+    ];
+  }
+}

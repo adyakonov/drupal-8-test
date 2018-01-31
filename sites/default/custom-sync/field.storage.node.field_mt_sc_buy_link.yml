@@ -1,0 +1,21 @@
+uuid: fc856047-7a51-4c0a-9cd5-61a73f095337
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - node
+_core:
+  default_config_hash: SfZdmCo7NREwg1bb_2TdxLrzu94T9Gboy9kD4RGamus
+id: node.field_mt_sc_buy_link
+field_name: field_mt_sc_buy_link
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

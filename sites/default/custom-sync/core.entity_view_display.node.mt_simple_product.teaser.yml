@@ -1,0 +1,26 @@
+uuid: 612491a3-76f9-46ed-8499-b62b95d8f4b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.mt_simple_product.body
+    - field.field.node.mt_simple_product.field_simple_image
+    - field.field.node.mt_simple_product.field_simple_price
+    - node.type.mt_simple_product
+  module:
+    - user
+_core:
+  default_config_hash: CnUPqcoqnwXO0hd5_YusqbNkdst6JWxYgeoM44hmrpg
+id: node.mt_simple_product.teaser
+targetEntityType: node
+bundle: mt_simple_product
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  body: true
+  field_simple_image: true
+  field_simple_price: true

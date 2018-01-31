@@ -1,0 +1,35 @@
+uuid: d3c7e129-7e73-4da9-ad56-94b0ba815b7f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_content_tabs
+    - node.type.mt_product
+    - paragraphs.paragraphs_type.mt_tab
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: MBLfB05r2YFZa6v_TTGYVr4SlRzPBCkfVb_uOZ3sNjU
+id: node.mt_product.field_mt_content_tabs
+field_name: field_mt_content_tabs
+entity_type: node
+bundle: mt_product
+label: Tabs
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      mt_tab: mt_tab
+    target_bundles_drag_drop:
+      mt_fancy_tab:
+        weight: 3
+        enabled: false
+      mt_tab:
+        enabled: true
+        weight: 4
+field_type: entity_reference_revisions

@@ -1,0 +1,30 @@
+uuid: b77b5fee-8906-4395-85e4-ceeb59c929d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_bf_tags
+    - node.type.mt_benefit
+    - taxonomy.vocabulary.tags
+_core:
+  default_config_hash: pSOIRA-eLfZb1wBNeneVlu7mNzixwPscKEWopw6TM70
+id: node.mt_benefit.field_mt_bf_tags
+field_name: field_mt_bf_tags
+entity_type: node
+bundle: mt_benefit
+label: Tags
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

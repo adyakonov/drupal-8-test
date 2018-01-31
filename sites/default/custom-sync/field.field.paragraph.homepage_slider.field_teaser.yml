@@ -1,0 +1,21 @@
+uuid: bb511dd8-8ea7-42c5-8e6c-807fae41dc05
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_teaser
+    - paragraphs.paragraphs_type.homepage_slider
+  module:
+    - text
+id: paragraph.homepage_slider.field_teaser
+field_name: field_teaser
+entity_type: paragraph
+bundle: homepage_slider
+label: Teaser
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

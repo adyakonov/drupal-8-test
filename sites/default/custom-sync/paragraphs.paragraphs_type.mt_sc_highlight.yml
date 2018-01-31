@@ -1,0 +1,11 @@
+uuid: cf32a7a8-1245-4e09-ae19-05b30c200d67
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: lFZMQkDUsLSgxyFwpRbc3jtCMZ1Kp7KpitzQYysSDPg
+id: mt_sc_highlight
+label: 'Service Highlight'
+icon_uuid: null
+description: null
+behavior_plugins: {  }

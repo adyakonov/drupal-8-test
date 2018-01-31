@@ -1,0 +1,32 @@
+uuid: 1fad7987-9c80-44f3-b262-e0fcacbe34eb
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - paragraphs
+_core:
+  default_config_hash: 3hChhx22Z5bThmE4bv0fv6hIE5r5EKKmm4_hJwGIKoI
+id: paragraph.field_mt_adf_image
+field_name: field_mt_adf_image
+entity_type: paragraph
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

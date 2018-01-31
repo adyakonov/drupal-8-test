@@ -1,0 +1,15 @@
+name: MT Benefit
+description: Drupal8 module.
+package: More than Themes
+
+type: module
+core: 8.x
+
+version:
+
+configure: mt_benefit.settings
+
+dependencies:
+  - datetime:datetime
+  - link:link
+  - drupal:video_embed_field

@@ -1,0 +1,45 @@
+uuid: b7bc997a-7671-4902-acbc-3f55a76b9d0f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.homepage_slider
+    - field.field.block_content.homepage_slider.body
+    - field.field.block_content.homepage_slider.field_slider_content
+    - field.field.block_content.homepage_slider.field_slider_speed
+  module:
+    - paragraphs
+id: block_content.homepage_slider.default
+targetEntityType: block_content
+bundle: homepage_slider
+mode: default
+content:
+  field_slider_content:
+    type: entity_reference_paragraphs
+    weight: 2
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_slider_speed:
+    weight: 1
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  body: true

@@ -1,0 +1,22 @@
+uuid: 7cee9431-7f4f-40aa-ae6f-529f58f6fdf8
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: rZ8UuDqb6BGwqqre30jeOzqqBv6w5LDj_SPby_TCmPU
+id: node.field_mt_sse_bg_video_volume
+field_name: field_mt_sse_bg_video_volume
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

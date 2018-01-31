@@ -1,0 +1,23 @@
+uuid: 059bbf05-f85c-4b40-a99a-273357a0f3d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mt_tab_content
+    - paragraphs.paragraphs_type.mt_tab
+  module:
+    - text
+_core:
+  default_config_hash: Q2zmtBLKwEWQ_1yBak_4T-uZzY3uz1tNDwdrDdGNhcw
+id: paragraph.mt_tab.field_mt_tab_content
+field_name: field_mt_tab_content
+entity_type: paragraph
+bundle: mt_tab
+label: 'Tab content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

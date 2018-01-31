@@ -1,0 +1,20 @@
+uuid: f73f1b6c-220d-4083-9990-cea6e28e82ce
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: M59B_RPAu5aoSOGzUG1zUobkPTXEmZlsqnycYleAMfU
+id: node.field_mt_slideshow
+field_name: field_mt_slideshow
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

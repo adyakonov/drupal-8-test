@@ -1,0 +1,22 @@
+uuid: 85a88008-dadf-46c8-a6de-9c75cc1018e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.homepage_slider
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.homepage_slider.body
+field_name: body
+entity_type: block_content
+bundle: homepage_slider
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies: {  }
+name: mt_member_photo
+label: 'Member Photo (750x750)'
+effects:
+  a0df2d92-7ea6-4fe2-a1d4-284a75a09a91:
+    uuid: a0df2d92-7ea6-4fe2-a1d4-284a75a09a91
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 750
+      height: 750

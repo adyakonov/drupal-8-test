@@ -1,0 +1,25 @@
+uuid: 739ef5ba-cb08-46e3-8343-b1a6a3a8f53e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_slideshow
+    - node.type.mt_product
+_core:
+  default_config_hash: 5ut7-FMv2v74lsTdVrXeD2J3hbbfyDiyi4Ihj02LlEs
+id: node.mt_product.field_mt_slideshow
+field_name: field_mt_slideshow
+entity_type: node
+bundle: mt_product
+label: 'Promote to front page slideshow'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

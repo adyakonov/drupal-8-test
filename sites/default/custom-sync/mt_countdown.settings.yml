@@ -1,0 +1,16 @@
+theme_select: block
+title: '30% Sale now on'
+prompt_message: 'Use MYCOUPON at checkout to get it till the end of the month.'
+target_url: 'http://www.morethanthemes.com'
+dismiss_text: 'Buy Now'
+days_to: 'Offer expires in'
+predefined_palettes: '0'
+background: '#FFFFFF'
+title_color: '#000000'
+message_color: 'rgba(255,0,0,0.6)'
+notes_color: 'rgba(0,255,255,0.8)'
+button_background: '#FFFFFF'
+button_color: 'rgba(255,0,255,0.6)'
+_core:
+  default_config_hash: S8Kvt7qsoaW9Pcm9C439rkfGlUS8sjmqkv-gPvciAQI
+expiration_date: '2018-01-22 12:45'

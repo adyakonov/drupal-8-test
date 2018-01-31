@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * Implements hook_uninstall().
+ */
+function mt_contenttype_uninstall() {
+  // Load services.
+  $queryFactory = \Drupal::service('entity.query');
+  $nodeStorage = \Drupal::entityManager()->getStorage('node');
+
+  // Query all entity.
+  $query = $queryFactory->get('node')->condition('type', 'mt_simple_product');
+  $nids = $query->execute();
+
+  // Delete entities.
+  if (!empty($nids)) {
+    $entities = $nodeStorage->loadMultiple($nids);
+    $nodeStorage->delete($entities);
+  }
+}

@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * @file
+ * Contains mt_slideshow_entry.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function mt_slideshow_entry_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the mt_slideshow_entry module.
+    case 'help.page.mt_slideshow_entry':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Configure the content and layout of the Slideshow Entry Content Type.') . '</p>';
+
+      return $output;
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function mt_slideshow_entry_theme() {
+  // Theme for mt_slideshow_entry module.
+  $themes['mt_slideshow_entry'] = [
+    'template'  => 'mt_slideshow_entry',
+    'variables' => [
+      'data' => NULL,
+    ],
+  ];
+
+  return $themes;
+
+}

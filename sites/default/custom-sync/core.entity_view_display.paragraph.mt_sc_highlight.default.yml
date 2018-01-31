@@ -1,0 +1,59 @@
+uuid: b5235082-76f0-4bb0-a6cc-bd57831475bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.mt_sc_highlight.field_mt_sc_highlight_body
+    - field.field.paragraph.mt_sc_highlight.field_mt_sc_highlight_image
+    - field.field.paragraph.mt_sc_highlight.field_mt_sc_highlight_link
+    - field.field.paragraph.mt_sc_highlight.field_mt_sc_highlight_title
+    - image.style.mt_service_highlight
+    - paragraphs.paragraphs_type.mt_sc_highlight
+  module:
+    - image
+    - link
+    - text
+_core:
+  default_config_hash: t0qNI-49Qi9LuqIya9Q4y76zO_duEI1IdviywUWwzrk
+id: paragraph.mt_sc_highlight.default
+targetEntityType: paragraph
+bundle: mt_sc_highlight
+mode: default
+content:
+  field_mt_sc_highlight_body:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_mt_sc_highlight_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: mt_service_highlight
+      image_link: file
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_mt_sc_highlight_link:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_mt_sc_highlight_title:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

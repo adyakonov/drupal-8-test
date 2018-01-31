@@ -1,0 +1,23 @@
+uuid: 95e2c5fe-3d0a-41ca-81f6-4943cf578be3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_bf_slideshow_text
+    - node.type.mt_benefit
+  module:
+    - text
+_core:
+  default_config_hash: wMJDzsyrUvNMp-umfNKZYITBzA2EaTiTy-nV-SYGBo0
+id: node.mt_benefit.field_mt_bf_slideshow_text
+field_name: field_mt_bf_slideshow_text
+entity_type: node
+bundle: mt_benefit
+label: 'Slideshow text'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

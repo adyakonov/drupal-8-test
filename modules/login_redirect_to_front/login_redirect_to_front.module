@@ -1,0 +1,9 @@
+<?php
+
+use Symfony\Component\HttpFoundation\RedirectResponse;
+ 
+function login_redirect_to_front_user_login($account) {
+  $response = new RedirectResponse(\Drupal::url('<front>')); 
+  $response->send();
+  return;
+}

@@ -1,0 +1,23 @@
+uuid: 41aeeb0a-b7d9-4ff1-8161-573378a94159
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: KxK3Qz-B5nzcvBL0I176rldYaHeUFmK83GUp4bBfhyc
+id: node.field_mt_sc_slideshow_path
+field_name: field_mt_sc_slideshow_path
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

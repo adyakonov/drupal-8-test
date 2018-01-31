@@ -1,0 +1,21 @@
+uuid: 6db88fd8-598e-4557-8644-9d4ac5c0e660
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+_core:
+  default_config_hash: 7V7ms6rQmr6WaxjgA_uSTWMc0jjGmHmm2OhrOuTKNPs
+id: node.field_mt_tmb_slideshow_text
+field_name: field_mt_tmb_slideshow_text
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

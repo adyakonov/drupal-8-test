@@ -1,0 +1,23 @@
+uuid: cec8bb82-8987-4e52-8a6a-1ded649d4992
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mt_collapse_body
+    - paragraphs.paragraphs_type.mt_collapse
+  module:
+    - text
+_core:
+  default_config_hash: KLDbFpYHBZ8LkpWJjyNIBC-7o-soSWRDI595uPHqolY
+id: paragraph.mt_collapse.field_mt_collapse_body
+field_name: field_mt_collapse_body
+entity_type: paragraph
+bundle: mt_collapse
+label: 'Collapse Body'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

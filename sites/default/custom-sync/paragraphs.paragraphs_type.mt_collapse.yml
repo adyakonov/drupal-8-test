@@ -1,0 +1,11 @@
+uuid: b55f6c58-b94f-45ca-97dd-093ee181be24
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: uwSP6KA9onhkK6MgK48iw-rq7W9foXkCLgx2gb_xxeA
+id: mt_collapse
+label: Collapse
+icon_uuid: null
+description: null
+behavior_plugins: {  }

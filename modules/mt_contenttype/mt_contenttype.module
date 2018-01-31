@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * @file
+ * Contains mt_contenttype.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function mt_contenttype_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the mt_contenttype module.
+    case 'help.page.mt_contenttype':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Configure the content and layout of the MT Content Type.') . '</p>';
+
+      return $output;
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function mt_contenttype_theme() {
+  // Theme for mt_contenttype module.
+  $themes['mt_contenttype'] = [
+    'template'  => 'mt_contenttype',
+    'variables' => [
+      'data' => NULL,
+    ],
+  ];
+
+  return $themes;
+
+}

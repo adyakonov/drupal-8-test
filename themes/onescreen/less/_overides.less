@@ -1,0 +1,95 @@
+// out: false
+
+/*
+
+  Overides
+
+*/
+
+.navbar {
+  margin-bottom: 0;
+}
+
+#toolbar-administration {
+
+  #toolbar-bar {
+    z-index: 1031;
+  }
+
+  button {
+    height: 39px;
+  }
+
+  .toolbar-tray {
+
+    a {
+      color: #565656;
+    }
+  }
+
+  [class*='icon-']:before {
+
+  }
+}
+
+.links,
+.menu,
+.slides,
+.flex-direction-nav,
+.contextual-links,
+.tabs,
+.toolbar-menu {
+
+  li {
+    margin-left: 0;
+
+    &:before {
+      display: none;
+    }
+  }
+}
+
+.links {
+  padding: 0;
+}
+
+.item-list {
+  
+  ul {
+    margin: 0;
+    padding: 0 0 0 40px;
+
+    li {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+ul.inline {
+  clear: both;
+
+  li {
+    display: inline;
+    list-style: none;
+    margin: 0 2px;
+    padding: 0;
+  }
+}
+
+[class*='col-xs-'],
+[class*='col-sm-'],
+[class*='col-md-'],
+[class*='col-lg-'] {
+  min-height: 0;
+}
+
+body {
+
+  &.toolbar-tray-open {
+
+    &.toolbar-vertical {
+      width: 100%;
+    }
+  }
+}

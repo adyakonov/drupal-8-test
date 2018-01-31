@@ -1,0 +1,21 @@
+uuid: f9405155-e246-406d-abb9-9ab89bd73a47
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - node
+_core:
+  default_config_hash: ZCGDBAWG-HtNsdmXUyGQXD9r7fAPaygUnPauBPuVEjc
+id: node.field_mt_tm_testimonial_link
+field_name: field_mt_tm_testimonial_link
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

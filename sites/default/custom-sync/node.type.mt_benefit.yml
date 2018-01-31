@@ -1,0 +1,20 @@
+uuid: 77208e99-7a4c-4b15-a017-bcc8565223cd
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: HRhBGO2o6PgKLI-6KKDDIRW-3W9Vv4eMcugPf4hXCVk
+name: Benefit
+type: mt_benefit
+description: 'A "Benefit" post is ideal for creating and displaying Benefits of your offerings to clients. A Benefit can be displayed in the front-page slideshow. It also comes with the capability of attaching an image which is automatically adjusted to fit into the website layout. What’s particularly cool about a Benefit post, is that it provides the ability to attach a series of images, thumbnails of which are automatically created and adjusted to fit into the website layout. Lastly, a Benefit post enables free tagging (just like labels), helping you make the most from the built-in taxonomy system.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

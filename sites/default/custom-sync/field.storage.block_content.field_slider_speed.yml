@@ -1,0 +1,20 @@
+uuid: f7058848-9bd8-4442-8308-7bc1d9cf110f
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.field_slider_speed
+field_name: field_slider_speed
+entity_type: block_content
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

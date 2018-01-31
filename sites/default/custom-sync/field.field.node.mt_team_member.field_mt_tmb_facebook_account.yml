@@ -1,0 +1,21 @@
+uuid: 59dc054d-ec7d-4313-96b4-09228acc1318
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_tmb_facebook_account
+    - node.type.mt_team_member
+_core:
+  default_config_hash: jbo45zpjVlDnqIg457ieBNXQTPJ5VdcXd5p-oUgdhDU
+id: node.mt_team_member.field_mt_tmb_facebook_account
+field_name: field_mt_tmb_facebook_account
+entity_type: node
+bundle: mt_team_member
+label: Facebook
+description: 'Enter the URL of your Facebook profile, e.g.: https://www.facebook.com/your-account'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

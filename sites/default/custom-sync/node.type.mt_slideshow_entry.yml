@@ -1,0 +1,20 @@
+uuid: e35e7cfd-b07c-4e96-bf77-b36ae94858c1
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: 62RzZRLx0i4QiIcBjDW5c5apFXrK9BogHfzI7hQ9RCI
+name: 'Slideshow entry'
+type: mt_slideshow_entry
+description: 'A Slideshow entry is ideal for creating commercial banners as well as messages for your website. Use it to promote any page of your website or URL into the front page slide show. It can carry a title, a teaser and an image linking to an internal path or external link.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

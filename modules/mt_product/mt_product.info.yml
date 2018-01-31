@@ -1,0 +1,17 @@
+name: MT Product
+description: Drupal8 module.
+package: More than Themes
+
+type: module
+core: 8.x
+
+version:
+
+configure: mt_product.settings
+
+dependencies:
+  - datetime:datetime
+  - link:link
+  - drupal:views
+  - drupal:video_embed_field
+  - drupal:paragraphs

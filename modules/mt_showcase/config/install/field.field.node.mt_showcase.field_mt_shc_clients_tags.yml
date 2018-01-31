@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_shc_clients_tags
+    - node.type.mt_showcase
+    - taxonomy.vocabulary.mt_brands_tags
+id: node.mt_showcase.field_mt_shc_clients_tags
+field_name: field_mt_shc_clients_tags
+entity_type: node
+bundle: mt_showcase
+label: Clients
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      mt_brands_tags: mt_brands_tags
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

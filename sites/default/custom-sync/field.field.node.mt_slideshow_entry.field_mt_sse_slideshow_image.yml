@@ -1,0 +1,40 @@
+uuid: 24514a67-d9a1-45e9-92b6-13cfebd3575f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_sse_slideshow_image
+    - node.type.mt_slideshow_entry
+  module:
+    - image
+_core:
+  default_config_hash: m5cQXdOfjs7oKKpG3VJLqUgjZJEjEvCrw0wpNosoztU
+id: node.mt_slideshow_entry.field_mt_sse_slideshow_image
+field_name: field_mt_sse_slideshow_image
+entity_type: node
+bundle: mt_slideshow_entry
+label: 'Slideshow image'
+description: "Upload the slideshow image you want to use. If you include a video ID bellow this image will be used as a cover images while the video loads.\r\n\r\nRecommended pixel dimensions for Fullscreen Slideshow - W: 1920 px / H: 1080 px.\r\n<br>Recommended pixel dimensions for Full-Width Slideshow - W: 1920 px / H: 500 px.\r\n<br>Recommended pixel dimensions for Boxed-Width Slideshow - W: 1140 px / H: 500 px."
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: true
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

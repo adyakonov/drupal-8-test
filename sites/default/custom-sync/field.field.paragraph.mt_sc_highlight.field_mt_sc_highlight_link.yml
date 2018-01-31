@@ -1,0 +1,25 @@
+uuid: c5c19871-73f8-472b-9473-219d5660f32c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mt_sc_highlight_link
+    - paragraphs.paragraphs_type.mt_sc_highlight
+  module:
+    - link
+_core:
+  default_config_hash: 0sjxsu14W8yt8im1wkkX7wrR2iK1EjZDSbO-ri9YvFg
+id: paragraph.mt_sc_highlight.field_mt_sc_highlight_link
+field_name: field_mt_sc_highlight_link
+entity_type: paragraph
+bundle: mt_sc_highlight
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

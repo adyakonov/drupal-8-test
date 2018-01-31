@@ -1,0 +1,8 @@
+uuid: 0b6a994b-741c-4cdf-abdb-032a3efec20b
+langcode: en
+status: true
+dependencies: {  }
+id: dco-menu
+label: 'DCO menu'
+description: ''
+locked: false
